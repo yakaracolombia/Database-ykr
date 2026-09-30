@@ -10,10 +10,10 @@
             "",
             "",
             "testeo update 2",
-            "testeo update 3",
-            "testeo update 4",
-            "testeo update 5",
-            "test-3"
+            "test-3",
+            "",
+            "no se como ",
+            "aqui actuliaza"
         ],
         "trinity": "Comprobar riel V_1P8STBY y señal STBY_CLK de 48 MHz.",
         "corona": "Comprobar V_1P2STBY, cristal de 25 MHz y eMMC/Flash.",

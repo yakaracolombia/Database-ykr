@@ -1,5 +1,5 @@
 {
-    "_version": 4,
+    "_version": "0.02",
     "NO_POWER": {
         "area": "Consola Muerta / Sin Respuesta al Encendido (No Power)",
         "descripcion": "La placa no responde al encendido. Revisar rieles Standby, pulso Heartbeat, reloj, SMC y Puente Sur.",
@@ -9,17 +9,27 @@
             "3. Revisar 3.3V Standby, 1.8V/1.2V y SMC Reset.",
             "",
             "",
-            "testeo update 2",
-            "test-3",
-            "",
-            "no se como ",
-            "aqui actuliaza"
+            "elimine lo que no necesito",
+            "agregue cuadro trasero corona bottom"
         ],
         "trinity": "Comprobar riel V_1P8STBY y señal STBY_CLK de 48 MHz.",
         "corona": "Comprobar V_1P2STBY, cristal de 25 MHz y eMMC/Flash.",
         "codigo_interno": "",
         "notas": "",
-        "videos": []
+        "videos": [],
+        "placas": {
+            "Corona_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        1416,
+                        1450,
+                        3788,
+                        3481
+                    ]
+                ],
+                "textos": []
+            }
+        }
     },
     "0001": {
         "area": "SMC (EC_FATAL) - ERROR_V_12P0",

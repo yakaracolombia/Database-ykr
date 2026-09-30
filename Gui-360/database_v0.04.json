@@ -1,5 +1,5 @@
 {
-    "_version": 3,
+    "_version": 4,
     "NO_POWER": {
         "area": "Consola Muerta / Sin Respuesta al Encendido (No Power)",
         "descripcion": "La placa no responde al encendido. Revisar rieles Standby, pulso Heartbeat, reloj, SMC y Puente Sur.",
@@ -10,6 +10,9 @@
             "",
             "",
             "testeo update 2",
+            "testeo update 3",
+            "testeo update 4",
+            "testeo update 5",
             "test-3"
         ],
         "trinity": "Comprobar riel V_1P8STBY y señal STBY_CLK de 48 MHz.",

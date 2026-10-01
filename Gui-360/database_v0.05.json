@@ -1,5 +1,5 @@
 {
-    "_version": "0.04",
+    "_version": "0.05",
     "42": {
         "nombre_error": "MENSAJES CURSO",
         "codigo_interno": "MENSAJERIA_IN_APP",
@@ -9,11 +9,23 @@
             "",
             "porfavor prueben la app y envienme sus recomendaciones a mi correo ",
             "",
-            "yakara@me.com"
+            "yakara@me.com",
+            "",
+            "",
+            "",
+            "",
+            "Deben descargar la version 1.1 de esta aplicacion",
+            "",
+            "el enlace esta en la pestaña de enlaces externos",
+            "o desde su panel de curso.",
+            "",
+            "esta actualizacion corrige dimensiones y parpadeo en botones"
         ],
         "placas": {},
         "pdfs": {},
-        "videos": []
+        "videos": [
+            "https://cursos-yakara.odoo.com/slides/slide/1-descarga-de-la-diagnosticapp-v-1-1-22?fullscreen=1#"
+        ]
     },
     "NO_POWER": {
         "area": "Consola Muerta / Sin Respuesta al Encendido (No Power)",

@@ -1,5 +1,20 @@
 {
-    "_version": "0.02",
+    "_version": "0.03",
+    "42": {
+        "nombre_error": "MENSAJES CURSO",
+        "codigo_interno": "MENSAJERIA_IN_APP",
+        "descripcion": "UN METODO DISTINTO DE COMUNICARNOS",
+        "pasos": [
+            "he habilitado esta seccion para informar novedades o recomendaciones,",
+            "",
+            "porfavor prueben la app y envienme sus recomendaciones a mi correo ",
+            "",
+            "yakara@me.com"
+        ],
+        "placas": {},
+        "pdfs": {},
+        "videos": []
+    },
     "NO_POWER": {
         "area": "Consola Muerta / Sin Respuesta al Encendido (No Power)",
         "descripcion": "La placa no responde al encendido. Revisar rieles Standby, pulso Heartbeat, reloj, SMC y Puente Sur.",
@@ -19,14 +34,7 @@
         "videos": [],
         "placas": {
             "Corona_Bottom.jpg": {
-                "rectangulos": [
-                    [
-                        1416,
-                        1450,
-                        3788,
-                        3481
-                    ]
-                ],
+                "rectangulos": [],
                 "textos": []
             }
         }

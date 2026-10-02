@@ -1,0 +1,3514 @@
+{
+    "_version": "0.06",
+    "42": {
+        "nombre_error": "MENSAJES CURSO",
+        "codigo_interno": "MENSAJERIA_IN_APP",
+        "descripcion": "UN METODO DISTINTO DE COMUNICARNOS",
+        "pasos": [
+            "he habilitado esta seccion para informar novedades o recomendaciones,",
+            "",
+            "porfavor prueben la app y envienme sus recomendaciones a mi correo ",
+            "",
+            "yakara@me.com",
+            "",
+            "",
+            "",
+            "",
+            "Deben descargar la version 1.1 de esta aplicacion",
+            "",
+            "el enlace esta en la pestaña de enlaces externos",
+            "o desde su panel de curso.",
+            "",
+            "esta actualizacion corrige dimensiones y parpadeo en botones"
+        ],
+        "placas": {},
+        "pdfs": {},
+        "videos": [
+            "https://cursos-yakara.odoo.com/slides/slide/1-descarga-de-la-diagnosticapp-v-1-1-22?fullscreen=1#"
+        ]
+    },
+    "NO_POWER": {
+        "area": "Consola Muerta / Sin Respuesta al Encendido (No Power)",
+        "descripcion": "La placa no responde al encendido. Revisar rieles Standby, pulso Heartbeat, reloj, SMC y Puente Sur.",
+        "pasos": [
+            "1. Probar fuente y tarjeta RF en buen estado.",
+            "2. Medir pulso de Heartbeat y riel V_5P0STBY.",
+            "3. Revisar 3.3V Standby, 1.8V/1.2V y SMC Reset.",
+            "",
+            "",
+            "elimine lo que no necesito",
+            "agregue cuadro trasero corona bottom"
+        ],
+        "trinity": "Comprobar riel V_1P8STBY y señal STBY_CLK de 48 MHz.",
+        "corona": "Comprobar V_1P2STBY, cristal de 25 MHz y eMMC/Flash.",
+        "codigo_interno": "",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Corona_Bottom.jpg": {
+                "rectangulos": [],
+                "textos": []
+            }
+        }
+    },
+    "0001": {
+        "area": "SMC (EC_FATAL) - ERROR_V_12P0",
+        "descripcion": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Arial','sans-serif'; font-size:11pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">La línea de 12V cayó fuera de tolerancia.</p></body></html>",
+        "pasos": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\nhr { height: 1px; border-width: 0; }\nli.unchecked::marker { content: \"\\2610\"; }\nli.checked::marker { content: \"\\2612\"; }\n</style></head><body style=\" font-family:'Arial','sans-serif'; font-size:11pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">1. Medir continuidad a tierra en la línea principal de 12V.</p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">2. Revisar señal PSU_V12P0_EN y V_12P0_DET.</p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">3. Reemplazar Puente Sur si falta la señal de Power Good.</p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">El código secundario 0001 en la Xbox 360 indica un fallo grave en el riel de alimentación principal de 12 Volts (ERROR_VDD_12V), producido por un cortocircuito a tierra o una sobrecorriente que hace que la fuente de poder apague la línea de salida inmediatamente (pasando la luz de la fuente de verde a rojo/naranja al instante).</p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">Causas Principales</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">MOSFETs de Conmutación en Corto (VRM): Es el origen más común en la placa madre. Un transistor MOSFET de la fase de potencia de la CPU o GPU (transistores de alta de la línea de 12V) entra en cortocircuito directo entre Drain y Source.</p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Capacitores Cerámicos SMD en Cortocircuito: Capacitores cerámicos de filtrado de 12V cerca del conector de entrada o en la entrada del VRM derivados a tierra por estrés térmico.</p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Falla de la Fuente de Poder Externa (PSU): La fuente de poder externa no logra sostener la corriente al cambiar de estado Standby a estado activo, o sus capacitores internos están agotados.</p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Daño Mecánico en el Conector de Alimentación: Pines doblados, sulfatados o fisurados en la toma de corriente trasera de la placa madre.</p></body></html>",
+        "trinity": "Revisar señal PSU_V12P0_EN hacia HANA.",
+        "corona": "Revisar V12P0_PWRGD y divisor resistivo de entrada.",
+        "boards": {
+            "trinity.jpg": []
+        },
+        "placas": {
+            "trinity.jpg": {
+                "rectangulos": [
+                    [
+                        2550,
+                        435,
+                        3287,
+                        1063
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray.jpg": {
+                "rectangulos": [
+                    [
+                        4477,
+                        577,
+                        5322,
+                        1133
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Bottom.jpg": {
+                "rectangulos": [
+                    {
+                        "coords": [
+                            1789.1539148647103,
+                            1583.7663481072818,
+                            2309.469083983529,
+                            2049.3114994241196
+                        ],
+                        "texto": ""
+                    }
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2593,
+                        182,
+                        3301,
+                        896
+                    ],
+                    [
+                        1214,
+                        2534,
+                        1526,
+                        2800
+                    ],
+                    [
+                        3029,
+                        2800,
+                        3259,
+                        3000
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2499,
+                        247,
+                        3283,
+                        978
+                    ],
+                    [
+                        1232,
+                        2576,
+                        1497,
+                        2811
+                    ],
+                    [
+                        3047,
+                        2811,
+                        3283,
+                        3065
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1326,
+                        2552,
+                        1597,
+                        2782
+                    ],
+                    [
+                        2640,
+                        312,
+                        3342,
+                        1019
+                    ],
+                    [
+                        3106,
+                        2794,
+                        3307,
+                        3035
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        183,
+                        367,
+                        918,
+                        1056
+                    ]
+                ],
+                "textos": []
+            },
+            "_vista_cargada": true
+        },
+        "codigo_interno": "ANA_V12P0_PWRGD",
+        "notas": "prueba de texto 1",
+        "pdfs": {
+            "Xbox_360_Trinity_Schematic.pdf": {
+                "pagina": 2,
+                "rectangulos": [
+                    [
+                        463,
+                        430,
+                        1770,
+                        1209
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity.pdf": {
+                "rectangulos": []
+            }
+        },
+        "youtube_url": "https://youtu.be/tK8ypUjL0hE?si=41Uucigyp3al30R2",
+        "videos": [
+            "https://youtu.be/tK8ypUjL0hE?si=41Uucigyp3al30R2"
+        ]
+    },
+    "0002": {
+        "area": "SMC (EC_FATAL) - ERROR_V_CPUCORE",
+        "descripcion": "Fallo de la fuente conmutada de VCORE o controlador PWM.",
+        "pasos": [
+            "1. Medir impedancia VCORE y MOSFETs de fase.",
+            "2. Verificar controlador PWM y señales Enable.",
+            "3. Sustituir PWM si las fases están bien."
+        ],
+        "trinity": "Revisar inductores y controladores de las 3 fases.",
+        "corona": "Verificar capacitores SMD cerca de la CGPU.",
+        "codigo_interno": "VREG_CPU_PWRGD",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1968,
+                        896,
+                        3259,
+                        1444
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2016,
+                        866,
+                        3342,
+                        1491
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3719,
+                        1466,
+                        5855,
+                        2353
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0003": {
+        "area": "SMC (EC_FATAL) - ERROR_V_3P3 / ERROR_V_GPUCORE",
+        "descripcion": "Posible cortocircuito en 3.3V o periféricos.",
+        "pasos": [
+            "1. Medir impedancia a tierra en V_3P3.",
+            "2. Aislar periféricos que consumen 3.3V.",
+            "3. Revisar regulador y componentes de filtrado.",
+            "",
+            "1. Cortocircuito o Sobrecarga en la Línea de 3.3V",
+            "El riel de 3.3V alimenta una gran cantidad de periféricos e integrados en la placa. Un capacitor SMD cruzado a tierra o un chip secundario dañado tira la línea abajo, impidiendo que el regulador entregue la señal Power Good:",
+            "Módulo RF (Placa Frontal / Wi-Fi): Muy habitual que un cortocircuito en la tarjeta Wi-Fi o en el panel frontal de encendido tumbe la línea de 3.3V.",
+            "Chip KSB / Southbridge: Daño interno en las entradas de alimentación de 3.3V del Southbridge.",
+            "",
+            "Memoria NAND / eMMC: Módulos de almacenamiento de la consola o la línea de lectura de la NAND alimentados por 3.3V.",
+            "",
+            "2. Integrado Regulador de 3.3V Defectuoso",
+            "Ubicado según la revisión de placa (ej. U5B1 en Trinity o reguladores lineales/estables dedicados en Corona):",
+            "Si el CI regulador está dañado, sulfatado o sobrecalentado, no eleva la salida principal de 3.3V ni libera el colector abierto del pin PWRGD.",
+            "Comprobar si recibe su tensión de entrada y la línea de habilitación (EN) desde la lógica del sistema.",
+            "",
+            "3. Resistencia de Pull-Up Abierta o Sulfatada",
+            "La línea VREG_V3P3_PWRGD depende de una resistencia de elevación (pull-up) conectada al riel de estado. Si esta resistencia SMD se abre o pierde su valor óhmico nominal, la señal se queda en 0V (nivel bajo) y el SMC interrumpe el encendido registrando el código 0003."
+        ],
+        "trinity": "Comprobar regulador U5B1 y capacitores de filtrado.",
+        "corona": "Revisar regulador U5A1 / U261 y chip Ethernet.",
+        "codigo_interno": "VREG_V3P3_PWRGD",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1049,
+                        3638,
+                        2181,
+                        5095
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        294,
+                        2245,
+                        1002,
+                        3065
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        406,
+                        2257,
+                        1131,
+                        3124
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0010": {
+        "area": "SMC (EC_FATAL) - ERROR_NO_HANA",
+        "descripcion": "Falta de respuesta o pérdida de comunicación SMBus con HANA/KSB.",
+        "pasos": [
+            "1. Revisar alimentación HANA/KSB.",
+            "2. Medir bus SMBus y pull-up.",
+            "3. Verificar cristal de reloj.",
+            "",
+            "Causas Principales del Error 0010",
+            "Soldadura Fría en el BGA del Southbridge (KSB): Esferas de soldadura fracturadas debajo del Southbridge por dilatación térmica o flexión de la placa madre.",
+            "",
+            "Falla en el Circuito Generador de Reloj:",
+            "Placas Phat: Chip HANA o ANA dañado o con soldadura fría.",
+            "Placas Slim (Trinity / Corona): La lógica de reloj integrada en la XCGPU o el KSB no oscila adecuadamente.",
+            "Cristal de Cuarzo de 27 MHz Defectuoso: El cristal oscilador perimétrico al Southbridge/HANA descalibrado, sulfatado o sin respuesta.",
+            "Pasivos SMD Desprendidos o Interrumpidos: Capacitores de desacople o redes de resistencias en el bus PCIe / SMBus entre el procesador principal y el Southbridge golpeados (frecuente tras desmontajes bruscos)."
+        ],
+        "trinity": "Revisar HANA externo y capacitores periféricos.",
+        "corona": "Revisar lógica HANA integrada en el KSB.",
+        "placas": {
+            "trinity.jpg": {
+                "rectangulos": [
+                    [
+                        1191,
+                        831,
+                        1734,
+                        1274
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1188,
+                        782,
+                        1712,
+                        1321
+                    ],
+                    [
+                        968,
+                        1724,
+                        1462,
+                        2240
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        881,
+                        1219,
+                        1545,
+                        1895
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2027,
+                        2027,
+                        3050,
+                        3113
+                    ]
+                ],
+                "textos": []
+            }
+        },
+        "codigo_interno": "ERROR_NO_ANA / ERROR_NO_HANA",
+        "notas": "",
+        "videos": []
+    },
+    "0011": {
+        "area": "SMC (EC_THERMAL) - ERROR_THERMAL_CPU",
+        "descripcion": "El SMC detecta sobretemperatura en el CPU y entra en protección térmica.",
+        "pasos": [
+            "1. Verificar X-Clamp y disipador.",
+            "2. Cambiar pasta térmica y revisar TIM.",
+            "3. Medir resistencias térmicas y sustituir controlador si hace falta.",
+            "",
+            "El código secundario 0011 en la Xbox 360 indica un fallo por sobrecalentamiento crítico o error de lectura en el sensor de temperatura de la CPU (ERROR_CPU_OVERTEMP). Ocurre cuando el SMC o el Southbridge detectan que la temperatura del procesador superó el umbral térmico de seguridad o cuando la lectura analógica del diodo térmico de la CPU está abierta o derivada a tierra al encender.",
+            "",
+            "Causas Principales del Error 0011",
+            "Falla Térmica Física: Pasta térmica seca o cristalizada, disipador mal asentado, falta de presión en el soporte X-Clamp o ventilador desconectado/defectuoso.",
+            "",
+            "Resistencias del Circuito Térmico Dañadas: Resistencias de precisión SMD de la red del diodo térmico (en la cara posterior o perímetro de la CPU/XCGPU) desvalorizadas, sulfatadas o voladas por raspones.",
+            "Línea de Señal Abierta o en Corto: Interrupción en las pistas de las líneas CPU_THERMD_P y CPU_THERMD_N (terminales positivo y negativo del diodo térmico interno de la CPU) que van hacia el Southbridge/ANA/HANA.",
+            "",
+            "Degradación Interna de la XCGPU / CPU: Falla física en el diodo de silicio sensor de temperatura integrado dentro de la propia CPU."
+        ],
+        "trinity": "Revisar acoplamiento del disipador y sensor térmico.",
+        "corona": "Comprobar resistencias SMD R4D7/R4D8.",
+        "placas": {
+            "trinity.jpg": {
+                "rectangulos": [
+                    [
+                        824,
+                        1496,
+                        1629,
+                        2278
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3073,
+                        2773,
+                        3410,
+                        2973
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1565,
+                        1699,
+                        1734,
+                        1806
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1169,
+                        890,
+                        1358,
+                        1317
+                    ],
+                    [
+                        955,
+                        1726,
+                        1525,
+                        2219
+                    ]
+                ],
+                "textos": []
+            }
+        },
+        "codigo_interno": "ERROR_THERMAL_CPU",
+        "notas": "",
+        "videos": []
+    },
+    "0012": {
+        "area": "SMC (EC_THERMAL) - ERROR_THERMAL_GPU",
+        "descripcion": "El SMC detecta sobretemperatura en el GPU.",
+        "pasos": [
+            "1. Revisar presión de X-Clamp y disipador.",
+            "2. Cambiar pasta térmica.",
+            "3. Revisar resistencias térmicas y chip de lectura.",
+            "",
+            "El código secundario 0012 en la Xbox 360 corresponde al fallo por sobrecalentamiento crítico o error de lectura en el sensor de temperatura del procesador gráfico (ERROR_GPU_OVERTEMP).",
+            "",
+            "Al igual que el error 0011 (asociado a la CPU), el 0012 ocurre cuando el SMC detecta que la GPU superó el umbral térmico de seguridad o cuando la lectura analógica del diodo térmico interno de la GPU está abierta (desconectada) o derivada a tierra inmediatamente al pulsar el botón de encendido.",
+            "Causas Principales del Error 0012",
+            "",
+            "Disipación Física Deficiente: Pasta térmica completamente seca o degradada, ",
+            "",
+            "Disipador de la GPU suelto, mal asentado o con falta de presión por deformación del X-Clamp.",
+            "Red de Resistencias SMD del Sensor Alterada: Resistencias de precisión SMD en el entorno o cara posterior de la GPU (encargadas de calibrar la lectura del diodo térmico) desvalorizadas, sulfatadas o voladas por raspones.",
+            "",
+            "Línea de Medición Abierta o en Corto: Interrupción en las pistas analógicas GPU_THERMD_P y GPU_THERMD_N que llevan la lectura de la GPU hacia el chip HANA (en placas Phat) o Southbridge/KSB (en placas Slim).",
+            "Daño Interno en el Silicio (GPU / XCGPU): Destrucción física del diodo térmico integrado dentro del núcleo gráfico."
+        ],
+        "trinity": "Inspeccionar pasta térmica sobre la CGPU.",
+        "corona": "Comprobar resistencias SMD R4D5/R4D6.",
+        "codigo_interno": "ERROR_THERMAL_GPU",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3050,
+                        2706,
+                        3412,
+                        2950
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1544,
+                        1680,
+                        1762,
+                        1815
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1186,
+                        947,
+                        1334,
+                        1252
+                    ],
+                    [
+                        992,
+                        1717,
+                        1490,
+                        2209
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0013": {
+        "area": "SMC (EC_THERMAL) - ERROR_THERMAL_EDRAM",
+        "descripcion": "El SMC detecta sobretemperatura en la matriz eDRAM.",
+        "pasos": [
+            "1. Revisar disipador y TIM.",
+            "2. Medir resistencias térmicas.",
+            "3. Reballing o sustitución de la CGPU si persiste.",
+            "",
+            "El código secundario 0013 en la Xbox 360 corresponde al fallo por sobrecalentamiento o error de lectura en el sensor térmico de la memoria RAM (ERROR_RAM_OVERTEMP).",
+            "",
+            "Ocurre cuando el SMC o Southbridge detecta que los módulos de memoria RAM superaron el umbral térmico de seguridad, o bien cuando la línea analógica de monitoreo térmico de la RAM está abierta (pista rota) o derivada a tierra inmediatamente al presionar el botón de encendido.",
+            "Causas Principales del Error 0013",
+            "",
+            "Resistencias del Sensor Térmico Dañadas: Componentes SMD en la red de monitoreo de la RAM (en el entorno de los módulos de memoria o en la cara posterior de la placa) desprendidos, desvalorizados o volados por raspones de herramientas (muy común al quitar el X-Clamp).",
+            "",
+            "Pistas Interrumpidas o Cortadas: Interrupción física en las pistas de la línea térmica de la RAM que comunican la red sensora con el Southbridge / KSB (en consolas Slim) o con el chip HANA (en Phat).",
+            "",
+            "Sobrecalentamiento Real por Corto en un Módulo RAM: Un chip de memoria con cortocircuito interno o degradación severa de silicio que eleva drásticamente su temperatura al instante de recibir voltaje.",
+            "",
+            "Falla en la Entrada Analógica del Southbridge / HANA: Puerto de entrada ADC del sensor de temperatura dañado dentro del propio chip Southbridge, KSB o HANA."
+        ],
+        "trinity": "Revisar transferencia térmica en la zona eDRAM.",
+        "corona": "Comprobar continuidad en R4D3/R4D4.",
+        "codigo_interno": "ERROR_THERMAL_EDRAM",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        973,
+                        1691,
+                        1465,
+                        2213
+                    ],
+                    [
+                        1145,
+                        866,
+                        1406,
+                        1329
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3085,
+                        2765,
+                        3435,
+                        2961
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1560,
+                        1691,
+                        1750,
+                        1804
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1554,
+                        1697,
+                        1738,
+                        1857
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0020": {
+        "area": "SMC (EC_BOOT) - ERROR_GPU_RST_DONE",
+        "descripcion": "El GPU/CGPU no desaserta o no responde a la liberación de reset.",
+        "pasos": [
+            "1. Verificar alimentación V_GPUCORE y V_MEM.",
+            "2. Comprobar reloj PCIe y señal de reset.",
+            "3. Revisar POST Fix y Reballing si hace falta.",
+            "",
+            "El código secundario 0020 en la Xbox 360 indica un fallo de inicialización o falta de respuesta de la GPU / XCGPU (ERROR_GPU_RST). Ocurre cuando el Southbridge intenta liberar la línea de reinicio (GPU_RST_N) al arrancar, pero la GPU no responde correctamente dentro del tiempo límite del POST.",
+            "Causas Principales del Error 0020",
+            "",
+            "Soldadura Fría / Fractura BGA en la GPU / XCGPU: La causa más frecuente. Esferas de soldadura agrietadas debajo del procesador gráfico debido al estrés térmico acumulado.",
+            "",
+            "Degradación del Silicio (Falla de Flip-Chip): Fractura de los micro-bumps internos que unen la matriz de silicio de la GPU con el sustrato del chip (muy común en revisiones Phat con GPU Xenon/Zephyr/Falcon y en XCGPU fatigadas).",
+            "",
+            "Línea de Reset o Reloj Interrumpida: Resistencias SMD desvalorizadas, sulfatadas o pistas cortadas en la línea de señal GPU_RST_N entre el Southbridge/KSB y la GPU.",
+            "",
+            "Inestabilidad en el Riel de Alimentación del Núcleo: Caída de tensión o ruido eléctrico en la fase V_GPUCORE que impide que la GPU complete su secuencia interna de arranque."
+        ],
+        "trinity": "Verificar resistencias de la línea CPU_RST.",
+        "corona": "Medir impedancia de la aguja del POST Fix.",
+        "codigo_interno": "ERROR_GPU_RST_DONE",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1780,
+                        1938,
+                        2126,
+                        2191
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1792,
+                        1934,
+                        2130,
+                        2164
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3358,
+                        3064,
+                        4035,
+                        3538
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1817,
+                        1900,
+                        2213,
+                        2155
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0021": {
+        "area": "SMC (EC_BOOT) - ERROR_NO_PCIE",
+        "descripcion": "El enlace PCIe entre CPU y GPU no establece el estado L0.",
+        "pasos": [
+            "1. Medir capacitores de acoplamiento del bus PCIe.",
+            "2. Revisar pistas abiertas o cortos.",
+            "3. Reballing o sustitución de la CGPU.",
+            "",
+            "Daño por manipulación: Durante modificaciones de hardware (como instalaciones de RGH, mantenimiento de pasta térmica o cambio/reflow del Southbridge), es habitual desplazar o golpear accidentalmente estos minúsculos capacitores cerca de las pistas del bus.",
+            "",
+            "Síntomas de falla: Si falla o falta un capacitor de acoplamiento en cualquiera de los pares diferenciales del bus PCIe, la consola pierde la comunicación interna entre la GPU y el Southbridge. Esto provoca un bloqueo en el ciclo de POST, pantalla negra, o códigos secundarios de error como el 0021 o 0022.",
+            "Prueba de línea: En diagnóstico de tarjeta madre, se verifica la presencia de estos componentes y la continuidad de las pistas desde las salidas de la GPU hasta las entradas del Southbridge para descartar líneas abiertas o cortocircuitos a tierra."
+        ],
+        "trinity": "Verificar integridad física del BGA del SoC.",
+        "corona": "Comprobar bus PCIe interno en la CGPU.",
+        "codigo_interno": "ERROR_NO_PCIE",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        937,
+                        1720,
+                        1519,
+                        2219
+                    ],
+                    [
+                        2188,
+                        1735,
+                        2848,
+                        2358
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2118,
+                        2231,
+                        2955,
+                        2955
+                    ],
+                    [
+                        4005,
+                        2885,
+                        4984,
+                        3835
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        979,
+                        1364,
+                        1461,
+                        1824
+                    ],
+                    [
+                        2099,
+                        1758,
+                        2714,
+                        2373
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        979,
+                        1387,
+                        1453,
+                        1832
+                    ],
+                    [
+                        2121,
+                        1780,
+                        2707,
+                        2410
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0022": {
+        "area": "SMC (EC_BOOT) - ERROR_NO_HANDSHAKE",
+        "descripcion": "El CPU no logra establecer la comunicación Handshake con el SMC.",
+        "pasos": [
+            "1. Revisar NAND, RGH y software.",
+            "2. Probar con XeLL o imagen clean.",
+            "3. Revisar integridad de la NAND y soldadura BGA.",
+            "",
+            "Si la consola está original o si presenta la falla física en la placa base:",
+            "Inspección Visual Cerca de CPU/GPU",
+            "",
+            "Revisa microscópicamente el contorno del X-Clamp y los conectores.",
+            "Verifica que no existan capacitores de acoplamiento SMD desprendidos, volados o en cortocircuito (especialmente en las líneas de datos PCIe hacia el Southbridge/KSB).",
+            "",
+            "Líneas de Alimentación (VRM):",
+            "Mide las líneas principales en los inductores centrales: V_CPUCORE (~1.0V–1.2V), V_GPUCORE, 1.2V_SOC y 1.8V_STBY.",
+            "",
+            "Un rizo o baja de voltaje en estas líneas detiene la CPU antes de completar el entrenamiento de memoria.",
+            "",
+            "Causa Térmica / Soldadura BGA:",
+            "La causa más común en placas clásicas (Phat) o Trinity/Corona sin RGH es la degradación de las esferas de soldadura (BGA) debajo de la CGPU o las memorias RAM por tensión térmica.",
+            "",
+            "Pasos si la Consola tiene RGH / Modificación",
+            "Revisión del Firmware (NAND): Reflashea la NAND de origen (Stock) o genera una nueva imagen Xell/FreeBOOT verificando que la versión de placa (Trinity, Corona, Falcon, etc.) y el tamaño de bloque sean los correctos.",
+            "",
+            "Líneas de Reorganización (RST / PLL): En placas Slim con RGH3, una resistencia inadecuada en la línea CPU_RST o PLL (por ejemplo, usar 1kΩ en lugar de 22kΩ en Trinity) produce constantemente el error 0022."
+        ],
+        "trinity": "Verificar estado del chip Glitch.",
+        "corona": "Comprobar sectores dañados en eMMC de 4GB.",
+        "codigo_interno": "ERROR_NO_HANDSHAKE",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1432,
+                        2098,
+                        1898,
+                        2558
+                    ],
+                    [
+                        2107,
+                        1761,
+                        2733,
+                        2372
+                    ],
+                    [
+                        346,
+                        1982,
+                        758,
+                        2232
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1426,
+                        2069,
+                        1998,
+                        2599
+                    ],
+                    [
+                        1114,
+                        1703,
+                        2245,
+                        2234
+                    ],
+                    [
+                        312,
+                        1986,
+                        766,
+                        2310
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1562,
+                        2021,
+                        2122,
+                        2523
+                    ],
+                    [
+                        389,
+                        1986,
+                        866,
+                        2251
+                    ],
+                    [
+                        2192,
+                        1733,
+                        2811,
+                        2357
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2999,
+                        3396,
+                        3676,
+                        4236
+                    ],
+                    [
+                        4023,
+                        2873,
+                        4981,
+                        3853
+                    ],
+                    [
+                        1075,
+                        3264,
+                        1783,
+                        3640
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0023": {
+        "area": "SMC (EC_FATAL) - ERROR_V_CPUEDRAM",
+        "descripcion": "Fallo en el riel V_CPUEDRAM.",
+        "pasos": [
+            "1. Medir impedancia a tierra en V_CPUEDRAM.",
+            "2. Inspeccionar MOSFETs y controlador.",
+            "3. Cambiar capacitores desvalorizados.",
+            "",
+            "Causas Principales de la Falla",
+            "Capacitores de Filtrado o Desacople Degradados/en Corto: Es el origen más habitual en placas Slim (Trinity y Corona). Los condensadores electrolíticos o cerámicos SMD del área del VRM de CPU/eDRAM (como C4E3/C4E6 o los capacitores electrolíticos sólidos de 820 µF) sufren fuga, se secan por estrés térmico o entran en cortocircuito a tierra.",
+            "",
+            "Anomalías en el Circuito PWM / IC Regulador: El controlador integrado encargado de administrar el riel de voltaje hacia el eDRAM y la RAM no recibe o no genera la confirmación de voltaje correcto. Resistencias de divisor de tensión o capacitores SMD perimétricos con soldadura cristalizada deshabilitan la línea.",
+            "",
+            "Alteración de Impedancia en la Red de Alimentación: Inductores (como L4F1) o transistores MOSFET con fuga o desvalorización impiden que la señal de Power Good se mantenga en nivel alto constante durante el arranque.",
+            "Falla BGA o Cristal de la XCGPU: Si los componentes pasivos y reguladores miden dentro de sus parámetros nominales pero el error persiste, la falla suele ser un cortocircuito interno en el die del procesador o esferas de soldadura unidas/fisuradas.",
+            "",
+            "tambien puede ser causado por un condensador c5c3 hasta el c7c12 en resistencia muy baja o dañado"
+        ],
+        "trinity": "Revisar regulador secundario eDRAM.",
+        "corona": "Revisar capacitores SMD cerca del zócalo.",
+        "codigo_interno": "ERROR_V_CPUEDRAM",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1821,
+                        2077,
+                        2005,
+                        2569
+                    ],
+                    [
+                        1287,
+                        2474,
+                        1869,
+                        3103
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1715,
+                        2094,
+                        2017,
+                        2581
+                    ],
+                    [
+                        1180,
+                        2569,
+                        1756,
+                        3091
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3285,
+                        3430,
+                        3828,
+                        4118
+                    ],
+                    [
+                        2525,
+                        4163,
+                        3385,
+                        4987
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1683,
+                        2108,
+                        1954,
+                        2398
+                    ],
+                    [
+                        1185,
+                        2380,
+                        1819,
+                        3032
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0030": {
+        "area": "SMC (EC_FATAL) - ERROR_NO_TEMPERATURES",
+        "descripcion": "Los registros de temperatura leen cero constante.",
+        "pasos": [
+            "1. Medir líneas SMBus.",
+            "2. Verificar voltajes de alimentación térmica.",
+            "3. Reemplazar chip KSB o reloj.",
+            "",
+            "El código secundario 0030 en la Xbox 360 corresponde al fallo ERROR_NO_TEMPERATURES. Ocurre cuando el chip controlador (HANA o Southbridge/KSB) intenta leer los diodos térmicos de la CPU/GPU, pero no recibe respuesta o la lectura da cero.",
+            "",
+            "Causas Principales",
+            "Resistencias de 0 Ω desvalorizadas o abiertas (Placas Corona y Winchester): En estas placas, las líneas de censado térmico que van de la XCGPU al Southbridge pasan por resistencias jumper de 0 ohmios (R4D3, R4D4, R4D5, R4D6, R4D7, R4D8). Si una de ellas se sulfata, se desprende o aumenta su resistencia por estrés térmico, se corta la lectura.",
+            "",
+            "",
+            "Defecto en el Puente Sur (Southbridge / KSB / HANA): El integrado KSB (en Slim/E) o el chip (H)ANA (en Phat/Trinity) procesa las lecturas analógicas del sensor. Un daño interno en su conversor ADC o soldadura fría en su BGA genera directamente este código.",
+            "",
+            "Diodo Térmico Dañado en la XCGPU / CPU: Si las líneas externas están intactas, la falla proviene del propio diodo integrado en la matriz de silicio o de esferas BGA agrietadas debajo del procesador."
+        ],
+        "trinity": "Revisar resistencias de pull-up hacia HANA.",
+        "corona": "Comprobar lógica interna de lectura del KSB.",
+        "codigo_interno": "ERROR_NO_TEMPERATURES",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        953,
+                        1361,
+                        1457,
+                        1834
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2128,
+                        2218,
+                        2914,
+                        2986
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        959,
+                        1331,
+                        1463,
+                        1823
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1163,
+                        827,
+                        1625,
+                        1217
+                    ],
+                    [
+                        989,
+                        1721,
+                        1517,
+                        2224
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0031": {
+        "area": "SMC (EC_FATAL) - ERROR_V_5P0",
+        "descripcion": "Fallo en el riel regulado de 5V.",
+        "pasos": [
+            "1. Medir resistencia a tierra de V_5P0.",
+            "2. Revisar regulador y resistencias de muestreo.",
+            "3. Sustituir regulador si hace falta.",
+            "",
+            "Cuando la consola recibe la orden de encendido, la fuente o los reguladores internos deben habilitar la línea de 5V principal (5V_REG / V5P0). Si este riel no se estabiliza, cae a tierra o el integrado que lo controla no conmuta la señal Power Good a nivel alto (3.3V), el SMC detecta la anomalía y corta la secuencia de encendido arrojando el código 0031.",
+            "",
+            "Puntos clave a revisar en placa:",
+            "Integrado Regulador de 5V (PWM): Es el chip encargado de generar los 5V. Si está en corto, sobrecalentado o con pines sulfatados, la señal de Power Good nunca se envía al Southbridge/SMC.",
+            "",
+            "Resistencia de Pull-Up de VREG_V5P0_PWRGD: Revisa la línea de elevación asociada a la señal PWRGD. Si la resistencia SMD de la línea se abre o desvaloriza, la señal se queda flotando en nivel bajo.",
+            "",
+            "Capacitores Cerámicos o MOSFETs en la Línea de 5V: Un capacitor de desacople SMD cruzado a tierra en cualquier etapa alimentada por los 5V tumba la línea e impide que se alcance la tensión nominal de operación.",
+            "",
+            "Línea de Habilitación (EN / Enable): Comprobar si el regulador de 5V está recibiendo la orden de encendido previa enviada desde el Southbridge/SMC. Si la orden no llega, la falla puede provenir del propio Southbridge o de una resistencia intermedia abierta."
+        ],
+        "trinity": "Comprobar regulador de 5V.",
+        "corona": "Revisar capacitores SMD de la línea de 5V.",
+        "codigo_interno": "VREG_V5P0_PWRGD",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        421,
+                        967,
+                        646,
+                        1163
+                    ],
+                    [
+                        824,
+                        2338,
+                        1091,
+                        2723
+                    ],
+                    [
+                        996,
+                        1732,
+                        1442,
+                        2201
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        361,
+                        1008,
+                        551,
+                        1180
+                    ],
+                    [
+                        753,
+                        2427,
+                        996,
+                        2765
+                    ],
+                    [
+                        1002,
+                        1358,
+                        1465,
+                        1827
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        344,
+                        991,
+                        540,
+                        1228
+                    ],
+                    [
+                        700,
+                        2439,
+                        979,
+                        2806
+                    ],
+                    [
+                        985,
+                        1412,
+                        1436,
+                        1851
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1145,
+                        1620,
+                        1442,
+                        1999
+                    ],
+                    [
+                        2166,
+                        2237,
+                        2907,
+                        2990
+                    ],
+                    [
+                        1687,
+                        3912,
+                        2262,
+                        4821
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0032": {
+        "area": "SMC (EC_FATAL) - ERROR_V_CPUVCS",
+        "descripcion": "Caída en la línea VCS.",
+        "pasos": [
+            "1. Medir riel V_CPUVCS.",
+            "2. Revisar redes de resistencias divisoras.",
+            "3. Sustituir PWM o resistores si es necesario.",
+            "",
+            "El código secundario 0032 en la Xbox 360 corresponde al fallo ERROR_V_CPUCORE_PWRGD (ausencia o pérdida de la señal Power Good en la línea de alimentación principal del núcleo del procesador / XCGPU).",
+            "",
+            "Ocurre cuando el circuito regulador PWM multidifuso encargado de alimentar la CPU/XCGPU conmuta para elevar el riel V_CPUCORE (alrededor de 1.0V – 1.2V), pero el integrado no logra detectar que el voltaje se estabilizó o la señal de confirmación hacia el SMC/Southbridge se queda en nivel bajo (0 V).",
+            "",
+            "Causas Principales del Error 0032",
+            "Capacitancia Faltante o Filtrado Degradado en el VRM: Capacitores cerámicos SMD de desacople cruzados a tierra o capacitores electrolíticos/sólidos degradados/secos en la fase del núcleo de la CPU.",
+            "MOSFETs de Conmutación Dañados: Transistores de la etapa de potencia de la CPU (fases de alta o baja) con fuga, cortocircuito interno entre Drain y Source, o desvalorizados.",
+            "",
+            "Integrado Controlador PWM (NCP / ADP / ISL): El CI controlador del VRM no está recibiendo su voltaje de alimentación VCC (5V/12V), su señal de habilitación (EN/Enable), o su salida PWRGD está internamente abierta/dañada.",
+            "",
+            "Resistencia de Pull-Up o Pistas Cortadas: La resistencia SMD de elevación asociada a la línea CPU_PWRGD / V_CPUCORE_PWRGD está abierta o sulfatada.",
+            "",
+            "Cortocircuito Interno en la CPU / XCGPU: Falla catastrófica en el die del procesador que tira la impedancia del riel V_CPUCORE prácticamente a 0 Ω impidiendo levantar la tensión.",
+            "",
+            "El chip U7C1 es el \"cerebro\" encargado de regular la etapa de potencia principal del procesador y de enviar las señales de estado a la consola:",
+            "Generación de la señal PWRGD: El pin de salida PWRGD (o VREG_CPUCORE_VCS_PWRGD en esquemático) sale directamente de este integrado U7C1 hacia el Southbridge/SMC. Si el U7C1 está defectuoso o sus condiciones de operación no se cumplen, no commuta esta línea a nivel alto (~3.3V) y la consola aborta arrojando el error 0032.",
+            "Habilitación (EN / Enable): En su pin EN (Enable / VTT), el U7C1 recibe la orden VREG_CPU_EN proveniente del SMC. Si el chip no detecta el nivel adecuado de habilitación o sus entradas de voltaje están alteradas, apaga inmediatamente las salidas hacia las fases MOSFET.",
+            "Control de Mosfets / Fases: Si U7C1 tiene algún pin sulfatado, soldadura fría o un daño interno en los drivers de puerta (gate drivers), las fases del regulador del núcleo no conmutan adecuadamente y no levantan el riel V_CPUCORE.",
+            "",
+            "Mediciones clave alrededor de U7C1",
+            "Si estás rastreando la falla en esa zona de la placa, debes verificar lo siguiente en el conector y componentes perimétricos del U7C1:",
+            "Pin de Alimentación (VCC): Confirmar que reciba sus 5V o 12V de alimentación auxiliar para operar la lógica interna.",
+            "Pin EN / Enable: Al presionar el botón de encendido, el pin de entrada EN (como la línea conectada a la resistencia R7C10) debe recibir la orden de habilitación.",
+            "",
+            "Pin PWRGD (Salida): Medir si este pin intenta subir a 3.3V durante el intento de arranque.",
+            "Entorno SMD (R7C10, capacitores de filtro): Inspeccionar resistencias asociadas a las líneas VID o rampas (como R7C10) y capacitores de desacople cerca de los pines del U7C1. Un capacitor smd filtrando a tierra cruzado en las líneas del U7C1 impedirá que el regulador entregue la señal de OK.",
+            "Resistencia de Pull-Up o Pistas Cortadas: La resistencia SMD de elevación asociada a la línea CPU_PWRGD / V_CPUCORE_PWRGD está abierta o sulfatada.",
+            "Cortocircuito Interno en la CPU / XCGPU: Falla catastrófica en el die del procesador que tira la impedancia del riel V_CPUCORE prácticamente a 0 Ω impidiendo levantar la tensión."
+        ],
+        "trinity": "Revisar divisores de voltaje de la fase VCS.",
+        "corona": "Inspeccionar capacitores cerca del PWM.",
+        "codigo_interno": "VREG_CPUCORE_VCS_PWRGD",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        5323,
+                        1776,
+                        5780,
+                        2224
+                    ],
+                    [
+                        4863,
+                        2657,
+                        4863,
+                        2657
+                    ],
+                    [
+                        4273,
+                        2262,
+                        5676,
+                        2589
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2923,
+                        1077,
+                        3167,
+                        1348
+                    ],
+                    [
+                        2280,
+                        1339,
+                        3077,
+                        1574
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2932,
+                        1122,
+                        3204,
+                        1366
+                    ],
+                    [
+                        2280,
+                        1384,
+                        3095,
+                        1620
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3023,
+                        1095,
+                        3348,
+                        1339
+                    ],
+                    [
+                        2398,
+                        1357,
+                        3303,
+                        1574
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0033": {
+        "area": "SMC (EC_FATAL) - ERROR_V_MEM",
+        "descripcion": "Fallo en V_MEM.",
+        "pasos": [
+            "1. Medir impedancia a tierra en V_MEM.",
+            "2. Revisar regulador y MOSFETs.",
+            "3. Inspeccionar capacitores de desacople de las RAMs.",
+            "En las placas Slim (particularmente en Trinity), la degradación del condensador C7F2 es uno de los fallos físicos más recurrentes cuando la consola se apaga al instante arrojando el código 0033 o 0023:",
+            "Fuga de ESR / Capacitancia Perdida: Aunque a simple vista el filtro C7F2 no esté inflamado o derramado por arriba, pierde progresivamente su capacidad o su Resistencia Serie Equivalente (ESR) se dispara.",
+            "Caída del Riel por Rizo de Corriente: Al encender la consola, la demanda de corriente para energizar el bloque analógico/eDRAM genera un pico de consumo. Si el C7F2 está seco o degradado, la línea cae de tensión durante unos milisegundos por falta de filtrado, colapsando el voltaje antes de que el regulador pueda estabilizar la señal de Power Good (PWRGD).",
+            "Cortocircuito Interno: En casos más graves, el dieléctrico del C7F2 entra en corto directo a tierra, tirando la impedancia del riel de alimentación a menos de 1 Ω.",
+            "Medición de Impedancia a Tierra en el Riel de 1.8V:",
+            "Con la consola desconectada, coloca el multímetro en escala de ohmios (o diodo) y mide la resistencia respecto a tierra en los capacitores de salida de la línea de 1.8V.",
+            "Lectura nominal: Varios cientos de ohmios o kilohmios.",
+            "Lectura de falla: Si marca de 0 Ω a 15 Ω, tienes un componente en corto en el riel de 1.8V.",
+            "Aislamiento del Cortocircuito mediante Inyección de Voltaje:",
+            "Si la línea está en corto, aplica 1.8V estables (máximo 1.8V, limitando la corriente a 1A–2A) con una fuente de laboratorio en la bobina o punto de prueba del riel.",
+            "Utiliza alcohol isopropílico o cámara térmica para identificar qué capacitor SMD de desacople (frecuentemente ubicados alrededor de los chips de RAM o de la XCGPU) se evapora/calienta. Retíralo y vuelve a medir la línea.",
+            "Verificación de Entrada, Salida y Habilitación (EN):",
+            "Conecta la fuente original de la consola y pulsa el botón de encendido mientras mides el regulador de 1.8V:",
+            "Entrada (VCC): Debe tener sus 5V o 12V de alimentación.",
+            "Enable (EN): Debe recibir un pulso de activación de ~3.3V proveniente del SMC.",
+            "Salida: Debe entregar 1.8V estables. Si hay entrada y EN, pero la salida cae a 0V sin corto presente en la línea, el integrado regulador de 1.8V está dañado.",
+            "Rastreo de la Señal VREG_1P8_PWRGD:",
+            "Si el riel entrega correctamente sus 1.8V pero la consola sigue arrojando el error 0033:",
+            "Ubica el pin PWRGD del regulador de 1.8V o la resistencia SMD de pull-up conectada a esa línea.",
+            "Al encender, la señal debe subir de 0V a ~3.3V. Si la resistencia de elevación está abierta o sulfatada, la señal se queda en nivel bajo y el KSB interrumpe el arranque."
+        ],
+        "trinity": "Verificar capacitores de filtro cerca de RAM.",
+        "corona": "Revisar salida del regulador V_MEM.",
+        "codigo_interno": "VREG_VMEM_PWRGD",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2890,
+                        2658,
+                        3139,
+                        2848
+                    ],
+                    [
+                        2776,
+                        2787,
+                        3357,
+                        3068
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2829,
+                        2692,
+                        3019,
+                        2901
+                    ],
+                    [
+                        2711,
+                        2844,
+                        3213,
+                        3080
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2825,
+                        2677,
+                        3042,
+                        2878
+                    ],
+                    [
+                        2719,
+                        2833,
+                        3281,
+                        3106
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        5149,
+                        4425,
+                        5484,
+                        4733
+                    ],
+                    [
+                        5041,
+                        4634,
+                        5864,
+                        4996
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0100": {
+        "area": "XSS (EC_XSS) - ERROR_NBINIT_MEM_VENDOR_ID",
+        "descripcion": "El 2BL no logra leer correctamente el Vendor ID de la memoria RAM.",
+        "pasos": [
+            "1. Inspeccionar pistas y corrosión entre RAM y CGPU.",
+            "2. Medir voltajes de alimentación de RAM.",
+            "3. Reballing o reemplazo de módulos RAM.",
+            "",
+            "El código secundario 0100 en la Xbox 360 indica un fallo de comunicación o inicialización en la memoria RAM (ERROR_RAM / ERROR_RAM_COMMUNICATION), producido cuando el procesador (GPU / XCGPU) no logra leer o escribir en uno o más módulos de memoria durante el proceso de POST.",
+            "",
+            "Causas Principales del Error 0100",
+            "Soldadura Fría o Agrietada en BGA de RAM: Es la causa más frecuente. El estrés térmico rompe el contacto de las esferas de soldadura debajo de alguna de las pastillas de memoria RAM o debajo de la propia XCGPU/GPU.",
+            "Módulo de RAM Internamente Dañado: Cortocircuito interno o degradación en el silicio de uno de los chips de memoria.",
+            "",
+            "Pistas Cortadas o Componentes SMD Desprendidos: Resistencias de terminación de bus de datos desvalorizadas/voladas o capacitores de desacople faltantes cerca de las memorias RAM (muy común por raspones con destornillador al retirar el X-Clamp).",
+            "Falla en el Riel de Alimentación de Memoria (V_MEM / V_REFD): Ausencia o rizo excesivo en la línea de 1.8V (Phat/Trinity) o 1.5V (Corona) que energiza los chips de RAM."
+        ],
+        "trinity": "Falsa soldadura en BGA del canal de memoria.",
+        "corona": "Verificar capacitores de desacople en RAM.",
+        "codigo_interno": "ERROR_NBINIT_MEM_VENDOR_ID",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        5204,
+                        2724,
+                        5901,
+                        3348
+                    ],
+                    [
+                        5213,
+                        3385,
+                        5855,
+                        3973
+                    ],
+                    [
+                        4525,
+                        4036,
+                        5086,
+                        4688
+                    ],
+                    [
+                        3882,
+                        4036,
+                        4471,
+                        4733
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2878,
+                        1674,
+                        3267,
+                        2054
+                    ],
+                    [
+                        2914,
+                        2081,
+                        3249,
+                        2407
+                    ],
+                    [
+                        2434,
+                        2516,
+                        2841,
+                        2887
+                    ],
+                    [
+                        2036,
+                        2498,
+                        2380,
+                        2841
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2914,
+                        1719,
+                        3222,
+                        2063
+                    ],
+                    [
+                        2932,
+                        2108,
+                        3222,
+                        2443
+                    ],
+                    [
+                        2416,
+                        2588,
+                        2796,
+                        2869
+                    ],
+                    [
+                        2045,
+                        2588,
+                        2398,
+                        2869
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2968,
+                        1665,
+                        3312,
+                        2009
+                    ],
+                    [
+                        2986,
+                        2054,
+                        3294,
+                        2389
+                    ],
+                    [
+                        2488,
+                        2534,
+                        2878,
+                        2805
+                    ],
+                    [
+                        2117,
+                        2534,
+                        2452,
+                        2832
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0101": {
+        "area": "XSS (EC_XSS) - ERROR_RAM_DATA_LINE",
+        "descripcion": "fallo en las líneas de datos o dirección del bus de la memoria RAM.",
+        "pasos": [
+            "A diferencia del 0100 (que suele asociarse al entrenamiento general o fallos de alimentación en RAM), el 0101 apunta directamente a la pérdida de comunicación en una línea específica de datos entre un chip de memoria RAM y el controlador dentro de la CPU/XCGPU.",
+            "",
+            "Causas Principales",
+            "Fisura de Soldadura BGA en Módulo RAM: Fractura por estrés térmico en alguna de las esferas BGA debajo de una de las memorias RAM (Samsung, Hynix, Elpida, Qimonda, etc.).",
+            "",
+            "Componente o Pista Interrumpida en el Bus: Resistencia de terminación de bus (redes de resistencias SMD) o capacitor de desacople dañado, volado o sulfatado cerca de los chips de memoria.",
+            "Corrosión o Daño Mecánico: Pistas cortadas por raspaduras de destornillador al intentar retirar el X-Clamp o sulfatación cerca de las memorias.",
+            "Falla BGA o Controlador Integrado en XCGPU/GPU: Esferas agrietadas debajo del propio procesador principal o daño en el canal interno del controlador de memoria."
+        ],
+        "trinity": "Desoldar chip Ethernet U3B1 si hay corto.",
+        "corona": "Desoldar chip Ethernet U1F1 si hay corto.",
+        "codigo_interno": "ERROR_NBINIT_MEM_READ_STROBE_DATA_WRITE",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2984,
+                        1703,
+                        3329,
+                        2397
+                    ],
+                    [
+                        2130,
+                        2492,
+                        2854,
+                        2866
+                    ],
+                    [
+                        2213,
+                        1720,
+                        2818,
+                        2326
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2100,
+                        1780,
+                        2723,
+                        2379
+                    ],
+                    [
+                        2890,
+                        1732,
+                        3252,
+                        2444
+                    ],
+                    [
+                        2041,
+                        2575,
+                        2795,
+                        2890
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2854,
+                        1697,
+                        3281,
+                        2415
+                    ],
+                    [
+                        2065,
+                        2539,
+                        2806,
+                        2890
+                    ],
+                    [
+                        2082,
+                        1720,
+                        2717,
+                        2391
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        4000,
+                        2887,
+                        4977,
+                        3855
+                    ],
+                    [
+                        5303,
+                        2769,
+                        5837,
+                        4018
+                    ],
+                    [
+                        3891,
+                        4172,
+                        5068,
+                        4688
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        699,
+                        2283,
+                        1109,
+                        2759
+                    ],
+                    [
+                        671,
+                        3719,
+                        1053,
+                        4110
+                    ],
+                    [
+                        2087,
+                        3747,
+                        2460,
+                        4138
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        615,
+                        2348,
+                        997,
+                        2796
+                    ],
+                    [
+                        596,
+                        3747,
+                        960,
+                        4157
+                    ],
+                    [
+                        2004,
+                        3784,
+                        2442,
+                        4194
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        615,
+                        2339,
+                        1043,
+                        2740
+                    ],
+                    [
+                        643,
+                        3765,
+                        1016,
+                        4129
+                    ],
+                    [
+                        1994,
+                        3784,
+                        2376,
+                        4101
+                    ],
+                    [
+                        -587,
+                        531,
+                        -587,
+                        531
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        624,
+                        2358,
+                        1006,
+                        2721
+                    ],
+                    [
+                        633,
+                        3765,
+                        997,
+                        4101
+                    ],
+                    [
+                        2032,
+                        3803,
+                        2358,
+                        4036
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0102": {
+        "area": "XSS (EC_XSS) - ERROR_NBINIT_MEM_READ_STROBE_DELAY_TRAINING",
+        "descripcion": "Fallo en el entrenamiento del retardo de lectura de RAM.",
+        "pasos": [
+            "1. Medir capacitores de filtro cerca de la RAM.",
+            "2. Revisar voltajes de referencia de la RAM.",
+            "3. Reballing de la CGPU si persiste.",
+            "",
+            "El código secundario 0102 en la Xbox 360 indica un fallo general de comunicación en el bus de memoria RAM o GPU (ERROR_RAM_UNKNOWN / RSVD_RAM). Es eproducido cuando el procesador no logra establecer enlace de datos con las memorias RAM o con la eDRAM durante la secuencia de POST.",
+            "",
+            "Causas Principales del Error 0102",
+            "Soldadura Fría / Fracturada en BGA de la XCGPU / GPU: Es la causa estadísticamente más frecuente. Las esferas de soldadura debajo del procesador principal sufren fracturas por la flexión térmica de la placa y la degradación de la aleación sin plomo.",
+            "",
+            "Falla BGA en Chips de Memoria RAM: Fisuras en las esferas de soldadura debajo de una o más pastillas de memoria RAM.",
+            "",
+            "Componentes SMD Desprendidos o Dañados: Capacitores de desacople o redes de resistencias SMD en la línea de la RAM/GPU volados o golpeados (muy habitual por deslizamiento de herramientas al retirar el X-Clamp).",
+            "Degradación de Interconexión Interna (Die / Flip-Chip): Falla en los micro-bumps internos que unen la matriz de silicio de la GPU/eDRAM con el sustrato del encapsulado."
+        ],
+        "trinity": "Desprendimiento de esferas BGA por estrés térmico.",
+        "corona": "Comprobar módulos RAM que calientan en exceso.",
+        "codigo_interno": "ERROR_NBINIT_MEM_READ_STROBE_DELAY_TRAINING",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3909,
+                        2733,
+                        5864,
+                        4715
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2081,
+                        1683,
+                        3204,
+                        2896
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2072,
+                        1719,
+                        3204,
+                        2941
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2136,
+                        1583,
+                        3312,
+                        2805
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Bottom.jpg": {
+                "rectangulos": [],
+                "textos": []
+            }
+        }
+    },
+    "0103": {
+        "area": "XSS (EC_XSS) - ERROR_NBINIT_MEM_WRITE_STROBE_DELAY_TRAINING",
+        "descripcion": "Fallo en el entrenamiento del retardo de escritura de RAM.",
+        "pasos": [
+            "1. Revisar líneas de control de escritura.",
+            "2. Medir rizo de V_MEM.",
+            "3. Reballing de CGPU o cambio de módulo RAM.",
+            "",
+            "El código secundario 0103 en la Xbox 360 indica un fallo de líneas de datos puenteadas o en cortocircuito (ERROR_RAM_BRIDGED / ERROR_GPU_THERMAL_BRIDGE). A diferencia del 0102 (línea abierta o soldadura fría), el 0103 ocurre cuando dos o más líneas del bus de datos de la memoria RAM o eDRAM hacen contacto entre sí o se derivan por deformación térmica.",
+            "",
+            "Causas Principales del Error 0103",
+            "Deformación Térmica en BGA (GPU / XCGPU): Es la causa más habitual. Por exceso de temperatura o estrés mecánico de los soportes X-Clamp, la placa se alabea y las esferas BGA debajo de la GPU o la eDRAM se aplastan hasta tocarse entre sí.",
+            "",
+            "Reflow / Reballing Mal Ejecutado: Puente de soldadura (solder bridge) creado involuntariamente entre esferas contiguas durante un intento previo de reflow o reballing en la XCGPU o chips de RAM.",
+            "Redes de Resistencias / Capacitores SMD Unidose: Cortocircuito por estaño o residuos conductores entre pines de las redes de resistencias SMD de terminación de la RAM.",
+            "",
+            "Falla de Micro-Bumps Internos: Degradación del silicio donde los puentes de soldadura internos (flip-chip bumps) que unen el die de la GPU/eDRAM con su sustrato colapsan por ciclos térmicos."
+        ],
+        "trinity": "Microfisuras bajo el SoC en líneas del bus de memoria.",
+        "corona": "Fallo en condensadores de acoplamiento del bus de datos.",
+        "codigo_interno": "ERROR_NBINIT_MEM_WRITE_STROBE_DELAY_TRAINING",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3674,
+                        4027,
+                        5086,
+                        4715
+                    ],
+                    [
+                        5222,
+                        2724,
+                        5846,
+                        4045
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2823,
+                        1674,
+                        3267,
+                        2434
+                    ],
+                    [
+                        1991,
+                        2534,
+                        2805,
+                        2914
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2869,
+                        1692,
+                        3240,
+                        2525
+                    ],
+                    [
+                        2027,
+                        2534,
+                        2832,
+                        2887
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2995,
+                        1683,
+                        3339,
+                        2398
+                    ],
+                    [
+                        2172,
+                        2507,
+                        2932,
+                        2896
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        634,
+                        2306,
+                        1001,
+                        2747
+                    ],
+                    [
+                        634,
+                        3758,
+                        946,
+                        4125
+                    ],
+                    [
+                        2012,
+                        3758,
+                        2389,
+                        4217
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        597,
+                        2306,
+                        1038,
+                        2784
+                    ],
+                    [
+                        624,
+                        3675,
+                        1010,
+                        4162
+                    ],
+                    [
+                        1984,
+                        3749,
+                        2435,
+                        4190
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        588,
+                        2389,
+                        1019,
+                        2738
+                    ],
+                    [
+                        652,
+                        3758,
+                        1001,
+                        4217
+                    ],
+                    [
+                        2003,
+                        3785,
+                        2379,
+                        4125
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        725,
+                        2306,
+                        1056,
+                        2738
+                    ],
+                    [
+                        725,
+                        3739,
+                        1102,
+                        4125
+                    ],
+                    [
+                        2104,
+                        3739,
+                        2407,
+                        4134
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0110": {
+        "area": "XSS (EC_XSS) - ERROR_MEMORY_ADDRESSING",
+        "descripcion": "Fallo o falta de respuesta en una línea de dirección de RAM.",
+        "pasos": [
+            "1. Inspeccionar pistas de dirección entre RAM y CGPU.",
+            "2. Medir impedancia respecto a masa.",
+            "3. Reballing de CGPU o cambio de chip RAM.",
+            "",
+            "El código secundario 0110 en la Xbox 360 indica un fallo de comunicación en el bus de dirección o datos de la memoria RAM (ERROR_RAM_DATA / ERROR_RAM_ADDRESS). Ocurre cuando la GPU/XCGPU no logra direccionar correctamente las celdas de memoria durante la fase de entrenamiento en la secuencia de POST.",
+            "",
+            "Causas Principales del Error 0110",
+            "Soldadura Fría o Agrietada en un Módulo de RAM: Esferas BGA desprendidas debajo de uno de los chips de memoria (Samsung, Hynix, Elpida, Qimonda) debido al estrés térmico prolongado.",
+            "",
+            "Daño en el Controlador de Memoria (GPU / XCGPU): Fractura de esferas BGA debajo del propio procesador principal o degradación en el canal de direccionamiento integrado en el die de la XCGPU.",
+            "",
+            "Líneas SMD Abiertas o Interrumpidas: Resistencias de terminación o capacitores de desacople desprendidos o golpeados alrededor de la RAM (habitual por deslizamiento de destornillador al quitar el X-Clamp).",
+            "Defecto Interno en una Pastilla de RAM: Falla física irreversible en el silicio de alguno de los chips de memoria."
+        ],
+        "trinity": "Líneas de dirección abiertas bajo el BGA.",
+        "corona": "Módulo RAM dañado en el canal principal.",
+        "codigo_interno": "ERROR_MEMORY_ADDRESSING",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2961,
+                        1673,
+                        3323,
+                        2397
+                    ],
+                    [
+                        2148,
+                        2492,
+                        2872,
+                        2854
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2860,
+                        1726,
+                        3240,
+                        2433
+                    ],
+                    [
+                        2041,
+                        2563,
+                        2806,
+                        2937
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2866,
+                        1685,
+                        3263,
+                        2433
+                    ],
+                    [
+                        2023,
+                        2504,
+                        2800,
+                        2884
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        5201,
+                        2781,
+                        5869,
+                        3922
+                    ],
+                    [
+                        3894,
+                        4107,
+                        5025,
+                        4682
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        584,
+                        2308,
+                        1140,
+                        2790
+                    ],
+                    [
+                        565,
+                        3699,
+                        1075,
+                        4172
+                    ],
+                    [
+                        2002,
+                        3764,
+                        2494,
+                        4209
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        621,
+                        2327,
+                        1075,
+                        2790
+                    ],
+                    [
+                        611,
+                        3708,
+                        955,
+                        4144
+                    ],
+                    [
+                        1956,
+                        3736,
+                        2438,
+                        4163
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        537,
+                        2355,
+                        1057,
+                        2763
+                    ],
+                    [
+                        556,
+                        3699,
+                        1047,
+                        4181
+                    ],
+                    [
+                        1928,
+                        3764,
+                        2447,
+                        4200
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        704,
+                        2308,
+                        1094,
+                        2744
+                    ],
+                    [
+                        713,
+                        3764,
+                        1103,
+                        4135
+                    ],
+                    [
+                        2086,
+                        3746,
+                        2484,
+                        4154
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "0111": {
+        "area": "XSS (EC_XSS) - ERROR_MEMORY_DATA",
+        "descripcion": "Fallo o falta de respuesta en una de las líneas de datos de RAM.",
+        "pasos": [
+            "1. Medir resistencia en líneas de datos.",
+            "2. Revisar alimentación de las RAMs.",
+            "3. Cambiar módulo RAM o rebolear la CGPU.",
+            "",
+            "El código secundario 0111 en la Xbox 360 corresponde a un fallo en el bus de datos o dirección de la memoria RAM (ERROR_RAM_DATA / ERROR_RAM_LINE_1). Indica que la GPU/XCGPU perdió comunicación con un canal específico del bus de memoria durante el entrenamiento de POST.",
+            "Causas Principales del Error 0111",
+            "",
+            "Soldadura Fría en BGA de RAM o XCGPU: Fractura por fatiga térmica en las esferas de soldadura debajo de alguna de las memorias RAM o en el controlador de memoria integrado en la XCGPU.",
+            "",
+            "Componente SMD Golpeado o Desprendido: Capacitores de desacople o redes de resistencias SMD en la línea del bus de datos volados o raspados (muy común al deslizar un destornillador al retirar el X-Clamp).",
+            "Chip de RAM Internamente Dañado: Falla irreversible en la matriz de silicio de una de las pastillas de memoria (Samsung, Hynix, Elpida, etc.).",
+            "",
+            "Rizo o Caída en el Riel V_MEM: Alimentación inestable en el riel de memoria (1.8V en Phat/Trinity o 1.5V en Corona) o en la tensión de referencia V_REFD."
+        ],
+        "trinity": "Falsa soldadura en las esferas del canal de datos.",
+        "corona": "Corto en resistores/capacitores de acoplamiento.",
+        "codigo_interno": "ERROR_MEMORY_DATA",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1997,
+                        1646,
+                        3191,
+                        2793
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3860,
+                        2737,
+                        5785,
+                        4645
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2126,
+                        1624,
+                        3330,
+                        2874
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2007,
+                        1660,
+                        3203,
+                        2965
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "1000": {
+        "area": "XSS UEM (E 64) - ERROR_XSS_CDROM_TIMED_OUT",
+        "descripcion": "Tiempo de espera agotado en la comunicación con la lectora DVD.",
+        "pasos": [
+            "1. Sustituir cable SATA y alimentación del DVD.",
+            "2. Comprobar 12V y 5V en el conector.",
+            "3. Revisar firmware o PCB lógica del DVD."
+        ],
+        "trinity": "Cable SATA defectuoso o placa lógica del DVD corrupta.",
+        "corona": "Falta de alimentación de 5V en el puerto de la lectora.",
+        "codigo_interno": "ERROR_XSS_CDROM_TIMED_OUT",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        489,
+                        580,
+                        628,
+                        888
+                    ],
+                    [
+                        1844,
+                        417,
+                        2176,
+                        707
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        489,
+                        544,
+                        640,
+                        840
+                    ],
+                    [
+                        1838,
+                        393,
+                        2182,
+                        622
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1348,
+                        900,
+                        1553,
+                        1354
+                    ],
+                    [
+                        3555,
+                        659,
+                        4081,
+                        1021
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        501,
+                        513,
+                        671,
+                        828
+                    ],
+                    [
+                        1946,
+                        380,
+                        2219,
+                        550
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "1001": {
+        "area": "XSS UEM (E 65) - ERROR_XSS_CDROM_NOT_DMA_CONFIGURED",
+        "descripcion": "El Kernel no puede configurar la lectora DVD en modo DMA.",
+        "pasos": [
+            "1. Probar con otra lectora DVD.",
+            "2. Inspeccionar interfaz SATA y capacitores.",
+            "3. Revisar estado del chip KSB."
+        ],
+        "trinity": "Líneas SATA del chip HANA/KSB defectuosas.",
+        "corona": "Capacitores de acoplamiento SATA desprendidos.",
+        "codigo_interno": "ERROR_XSS_CDROM_NOT_DMA_CONFIGURED",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        471,
+                        598,
+                        604,
+                        876
+                    ],
+                    [
+                        943,
+                        1360,
+                        1408,
+                        1832
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        465,
+                        538,
+                        628,
+                        810
+                    ],
+                    [
+                        979,
+                        1348,
+                        1469,
+                        1856
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1354,
+                        864,
+                        1644,
+                        1439
+                    ],
+                    [
+                        2164,
+                        2194,
+                        2986,
+                        3017
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        495,
+                        519,
+                        640,
+                        858
+                    ],
+                    [
+                        949,
+                        1717,
+                        1511,
+                        2225
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "1002": {
+        "area": "XSS UEM (E 66) - ERROR_XSS_CDROM_COULD_NOT_CREATE_DEVICE",
+        "descripcion": "El Kernel no puede crear la instancia de dispositivo para la lectora DVD.",
+        "pasos": [
+            "1. Verificar modelo y firmware de la lectora.",
+            "2. Inspeccionar PCB y controladores de motor.",
+            "3. Restaurar imagen NAND o firmware original."
+        ],
+        "trinity": "Incompatibilidad de spoofing de lectora DVD.",
+        "corona": "Líneas de control de la lectora en corto.",
+        "codigo_interno": "ERROR_XSS_CDROM_COULD_NOT_CREATE_DEVICE",
+        "notas": "",
+        "videos": []
+    },
+    "1003": {
+        "area": "XSS UEM (E 67) - ERROR_XSS_HDD_TIMED_OUT",
+        "descripcion": "Tiempo de espera agotado en la comunicación con el disco duro.",
+        "pasos": [
+            "1. Probar encender sin HDD.",
+            "2. Limpiar o cambiar conector SATA.",
+            "3. Revisar líneas SATA hacia KSB."
+        ],
+        "trinity": "Disco duro interno con sectores defectuosos.",
+        "corona": "Capacitores cerámicos del bus SATA en corto.",
+        "codigo_interno": "ERROR_XSS_HDD_TIMED_OUT",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        261,
+                        558,
+                        404,
+                        861
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        980,
+                        879,
+                        1206,
+                        1343
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        350,
+                        528,
+                        469,
+                        861
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        225,
+                        558,
+                        386,
+                        915
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "1010": {
+        "area": "XSS UEM (E 68) - ERROR_XSS_HDD_NOT_DMA_CONFIGURED",
+        "descripcion": "El Kernel no puede configurar el Disco Duro en modo DMA.",
+        "pasos": [
+            "1. Probar la consola sin HDD.",
+            "2. Medir voltajes de 5V y 12V en el conector HDD.",
+            "3. Sustituir HDD o revisar canal SATA."
+        ],
+        "trinity": "Conector SATA con pines sulfatados o sueltos.",
+        "corona": "Canal SATA del KSB dañado por picos de tensión.",
+        "codigo_interno": "ERROR_XSS_HDD_NOT_DMA_CONFIGURED",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        250,
+                        569,
+                        495,
+                        959
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        337,
+                        529,
+                        504,
+                        826
+                    ],
+                    [
+                        2024,
+                        591,
+                        2297,
+                        770
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        981,
+                        900,
+                        1368,
+                        1520
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        272,
+                        532,
+                        501,
+                        941
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "1011": {
+        "area": "XSS UEM (E 69) - ERROR_XSS_HDD_COULD_NOT_CREATE_DEVICE",
+        "descripcion": "El Kernel no puede crear la instancia de dispositivo para el Disco Duro.",
+        "pasos": [
+            "1. Probar otro disco duro conocido.",
+            "2. Revisar cortocircuitos en el puerto SATA.",
+            "3. Verificar estado del KSB."
+        ],
+        "trinity": "Disco duro corrupto o PCB dañada.",
+        "corona": "Fallo de detección de la línea de presencia HDD.",
+        "codigo_interno": "ERROR_XSS_HDD_COULD_NOT_CREATE_DEVICE",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        249,
+                        534,
+                        392,
+                        844
+                    ],
+                    [
+                        927,
+                        1372,
+                        1468,
+                        1795
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        950,
+                        909,
+                        1194,
+                        1384
+                    ],
+                    [
+                        2181,
+                        2222,
+                        2906,
+                        2942
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        344,
+                        511,
+                        463,
+                        790
+                    ],
+                    [
+                        950,
+                        1705,
+                        1450,
+                        2234
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        225,
+                        552,
+                        392,
+                        879
+                    ],
+                    [
+                        968,
+                        1384,
+                        1426,
+                        1866
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "1012": {
+        "area": "XSS UEM (E 70) - ERROR_XSS_HDD_NOT_FOUND",
+        "descripcion": "El Disco Duro es detectado pero el Kernel no puede acceder a su estructura.",
+        "pasos": [
+            "1. Revisar sectores dañados con SMART.",
+            "2. Comprobar cable SATA y conectores.",
+            "3. Sustituir HDD si el sistema no lo reconoce."
+        ],
+        "trinity": "HDD con sectores defectuosos o fallo electrónico.",
+        "corona": "Capacitores cerámicos del bus SATA en corto.",
+        "codigo_interno": "ERROR_XSS_HDD_NOT_FOUND",
+        "notas": "",
+        "videos": []
+    },
+    "1021": {
+        "area": "XSS UEM (E 73) - ERROR_HSIO_TRAINING",
+        "descripcion": "Fallo crítico en el enlace eDRAM High-Speed I/O.",
+        "pasos": [
+            "1. Revisar condensadores SMD alrededor de la CGPU.",
+            "2. Medir resistencias de precisión HSIO.",
+            "3. Reballing o sustitución de la CGPU."
+        ],
+        "trinity": "Suele responder bien a Reballing si no hay shock térmico.",
+        "corona": "Descartar memoria antes de hacer BGA.",
+        "codigo_interno": "ERROR_HSIO_TRAINING_FAILED",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2104,
+                        1783,
+                        2732,
+                        2394
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2110,
+                        1723,
+                        2714,
+                        2388
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3941,
+                        2840,
+                        5060,
+                        3885
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2211,
+                        1720,
+                        2803,
+                        2349
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "1033": {
+        "area": "XSS UEM (E 79) - ERROR_XSS_FLASH_NO_XAM",
+        "descripcion": "XAM no se encuentra almacenado dentro de la estructura NAND Flash.",
+        "pasos": [
+            "1. Leer la NAND con un programador.",
+            "2. Escribir una imagen NAND limpia conocida.",
+            "3. Sustituir eMMC/Flash si sigue corrupta."
+        ],
+        "trinity": "Imagen NAND dañada o corrupción de bloques.",
+        "corona": "Módulo eMMC 4GB degradado por ciclos de lectura.",
+        "codigo_interno": "ERROR_XSS_FLASH_NO_XAM",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        394,
+                        1938,
+                        867,
+                        2291
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        335,
+                        1956,
+                        771,
+                        2261
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1106,
+                        3165,
+                        1789,
+                        3655
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        329,
+                        1992,
+                        753,
+                        2267
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "1101": {
+        "area": "XSS UEM (E 81) - XeKeysSecuritySaveSettings",
+        "descripcion": "Fallo en una operación de escritura de configuración de seguridad.",
+        "pasos": [
+            "1. Verificar línea de protección de escritura de NAND.",
+            "2. Revisar bloques dañados en Flash.",
+            "3. Sustituir chip NAND si es necesario."
+        ],
+        "trinity": "Fallo físico de grabación en la NAND de 16MB.",
+        "corona": "Controladora eMMC incapaz de escribir sectores clave.",
+        "codigo_interno": "XeKeysSecuritySaveSettingsXeKeysSecuritySaveSettings",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        284,
+                        1813,
+                        792,
+                        2273
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        314,
+                        1807,
+                        773,
+                        2267
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1100,
+                        2926,
+                        1789,
+                        3639
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        411,
+                        1783,
+                        840,
+                        2273
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "1102": {
+        "area": "XSS UEM (E 82) - ERROR_HSIO_CALIBRATION",
+        "descripcion": "Fallo en la calibración del bus HSIO entre la CGPU y el eDRAM.",
+        "pasos": [
+            "1. Revisar capacitores SMD de la zona eDRAM.",
+            "2. Revisar red de calibración HSIO.",
+            "3. Reballing o sustitución de la CGPU.",
+            "",
+            "El código E82 (1102) corresponde de forma directa a la falla de inicialización o entrenamiento en el bus HSIO (High-Speed I/O) que conecta el núcleo de la GPU con la memoria eDRAM.",
+            "",
+            "El bus HSIO es el enlace de ultra alta velocidad que comunica el motor gráfico principal con los 10 MB de eDRAM (encargada del Z-buffering, Alpha Blending y Anti-Aliasing). Durante la fase de POST, la consola ejecuta una calibración de impedancia y sincronización (bus training) en este enlace; si la capa física (PHY) no logra enganchar la señal, se aborta el arranque lanzando el error E82 / 1102.",
+            "",
+            "Causas Principales del Fallo en el Bus HSIO",
+            "Fisura en Micro-Bumps Internos (Die-to-Die / Flip-Chip): Es la causa más habitual. Interrupción o fractura por ciclos térmicos en las microesferas de soldadura internas que unen la matriz de silicio de la GPU con la matriz de la eDRAM sobre el sustrato del chip (o en el bloque integrado de la XCGPU).",
+            "Falla en la Alimentación del PHY / eDRAM (V_1P2_SOC / V_EDRAM): ",
+            "",
+            "Ausencia, ruido o caída de tensión en el riel de bajo voltaje que alimenta la interfaz física I/O del bloque eDRAM y sus circuitos de sincronización.",
+            "Soldadura Fría BGA en Líneas de Alimentación del Bus: Fisuras en las esferas BGA externas de la XCGPU/GPU que entregan plano de masa (GND) o voltajes de referencia dedicados al bloque HSIO.",
+            "",
+            "Filtros SMD de Desacople en Corto o Alterados: Capacitores cerámicos desvalorizados o cruzados en las líneas de filtrado del bloque eDRAM en la cara posterior o perímetro de la XCGPU."
+        ],
+        "trinity": "Falsa soldadura en las esferas BGA del procesador.",
+        "corona": "Daño interno en el canal HSIO de la CGPU.",
+        "codigo_interno": "ERROR_HSIO_CALIBRATION_FAILED",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2189,
+                        1705,
+                        2866,
+                        2399
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2118,
+                        1717,
+                        2740,
+                        2393
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3987,
+                        2831,
+                        4977,
+                        3885
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2072,
+                        1720,
+                        2747,
+                        2479
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        1071,
+                        2788,
+                        1908,
+                        3524
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        1112,
+                        2794,
+                        1830,
+                        3572
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        1130,
+                        2812,
+                        1836,
+                        3584
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Bottom.jpg": {
+                "rectangulos": [
+                    [
+                        1256,
+                        2764,
+                        1896,
+                        3488
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    },
+    "35": {
+        "nombre_error": "Error 1013",
+        "codigo_interno": "ERROR_XSS_XAM_NO_DASH",
+        "descripcion": "",
+        "pasos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        290,
+                        1838,
+                        755,
+                        2267
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        308,
+                        1795,
+                        779,
+                        2212
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1118,
+                        2914,
+                        1747,
+                        3567
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        368,
+                        1753,
+                        852,
+                        2267
+                    ]
+                ],
+                "textos": []
+            }
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
+    "36": {
+        "nombre_error": "Error 1020",
+        "codigo_interno": "ERROR_SMC_FLASH_CONFIG_CORRUPT",
+        "descripcion": "",
+        "pasos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        442,
+                        1765,
+                        843,
+                        2267
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        341,
+                        1777,
+                        771,
+                        2249
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1071,
+                        2937,
+                        1812,
+                        3631
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        317,
+                        1795,
+                        789,
+                        2261
+                    ]
+                ],
+                "textos": []
+            }
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
+    "37": {
+        "nombre_error": "Error 1022",
+        "codigo_interno": "ERROR_HSIO_CALIBRATION_FAILED",
+        "descripcion": "",
+        "pasos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2092,
+                        1747,
+                        2714,
+                        2430
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2116,
+                        1729,
+                        2720,
+                        2400
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3978,
+                        2821,
+                        4995,
+                        3867
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2183,
+                        1656,
+                        2840,
+                        2377
+                    ]
+                ],
+                "textos": []
+            }
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
+    "38": {
+        "nombre_error": "Error 1023",
+        "codigo_interno": "ERROR_UNEXPECTED_ETHERNET_PHY_VENDOR",
+        "descripcion": "",
+        "pasos": [],
+        "placas": {
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        671,
+                        37,
+                        1155,
+                        624
+                    ],
+                    [
+                        960,
+                        1295,
+                        1454,
+                        1873
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1668,
+                        102,
+                        2358,
+                        1034
+                    ],
+                    [
+                        2125,
+                        2227,
+                        2861,
+                        2992
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        745,
+                        -9,
+                        1239,
+                        680
+                    ],
+                    [
+                        829,
+                        1491,
+                        1071,
+                        1733
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        661,
+                        65,
+                        1081,
+                        624
+                    ],
+                    [
+                        978,
+                        1342,
+                        1407,
+                        1808
+                    ]
+                ],
+                "textos": []
+            }
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
+    "39": {
+        "nombre_error": "Error 1030",
+        "codigo_interno": "",
+        "descripcion": "ERROR_ETHERNET_PHY_RESET_FAIL",
+        "pasos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        683,
+                        90,
+                        1100,
+                        659
+                    ],
+                    [
+                        985,
+                        1396,
+                        1414,
+                        1886
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        671,
+                        54,
+                        1106,
+                        634
+                    ],
+                    [
+                        955,
+                        1336,
+                        1487,
+                        1844
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1735,
+                        157,
+                        2321,
+                        1003
+                    ],
+                    [
+                        2140,
+                        2146,
+                        2914,
+                        2980
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        792,
+                        30,
+                        1215,
+                        592
+                    ],
+                    [
+                        822,
+                        1475,
+                        1082,
+                        1723
+                    ]
+                ],
+                "textos": []
+            }
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
+    "40": {
+        "nombre_error": "Error 1031",
+        "codigo_interno": "ERROR_ETHERNET_PHY_READ_WRITE_FAIL",
+        "descripcion": "",
+        "pasos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        795,
+                        29,
+                        1214,
+                        622
+                    ],
+                    [
+                        861,
+                        1537,
+                        1047,
+                        1687
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        682,
+                        41,
+                        1083,
+                        544
+                    ],
+                    [
+                        969,
+                        1352,
+                        1501,
+                        1848
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1669,
+                        113,
+                        2357,
+                        975
+                    ],
+                    [
+                        2177,
+                        2225,
+                        2913,
+                        3009
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        682,
+                        23,
+                        1106,
+                        634
+                    ],
+                    [
+                        999,
+                        1388,
+                        1418,
+                        1872
+                    ]
+                ],
+                "textos": []
+            }
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
+    "41": {
+        "nombre_error": "Error 1032",
+        "codigo_interno": "ERROR_UNSUPPORTED_GPU",
+        "descripcion": "",
+        "pasos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2079,
+                        1723,
+                        2763,
+                        2442
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2098,
+                        1705,
+                        2739,
+                        2418
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3978,
+                        2812,
+                        4986,
+                        3894
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2174,
+                        1683,
+                        2831,
+                        2423
+                    ]
+                ],
+                "textos": []
+            }
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
+    "LUZ ROJA EN FUENTE": {
+        "area": "subtitulo de luz roja en la fuente",
+        "descripcion": "La consola nisiquiera intenta prender",
+        "pasos": [
+            "La luz roja en fuente se puede deber a dos errores principales",
+            "",
+            "corto en lineas de STAND_BY",
+            "",
+            "corto en linea de 12v",
+            "",
+            "si la luz roja es automatica el momento de conectar la fuente aun sin prender, se debe a corto en la lines de satnd_by",
+            "",
+            "si la luz roja aparece luego de intentar prender la consola, es un error en la linea de 12v",
+            "",
+            "antes de revisar la consola, hay que descartar la fuente y probar con una que estemos seguros de que funciona, una fuente en corto interno puede no tener la entrega de 12v o sun componentes interno defectuosos, ",
+            "",
+            "NUNCA SE DEBE INTENTAR REPARAR UNA FUENTE"
+        ],
+        "trinity": "",
+        "corona": "",
+        "codigo_interno": "LUZ ROJA EN FUENTE",
+        "notas": "",
+        "videos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2297,
+                        478,
+                        2471,
+                        753
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2237,
+                        460,
+                        2435,
+                        718
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        4230,
+                        819,
+                        4463,
+                        1178
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2213,
+                        502,
+                        2399,
+                        771
+                    ]
+                ],
+                "textos": []
+            }
+        }
+    }
+}

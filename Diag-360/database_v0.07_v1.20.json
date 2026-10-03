@@ -1,5 +1,5 @@
 {
-    "_version": "0.06",
+    "_version": "0.07",
     "42": {
         "nombre_error": "MENSAJES CURSO",
         "codigo_interno": "MENSAJERIA_IN_APP",
@@ -2687,6 +2687,118 @@
         "notas": "",
         "videos": []
     },
+    "35": {
+        "nombre_error": "Error 1013",
+        "codigo_interno": "ERROR_XSS_XAM_NO_DASH",
+        "descripcion": "",
+        "pasos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        290,
+                        1838,
+                        755,
+                        2267
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        308,
+                        1795,
+                        779,
+                        2212
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1118,
+                        2914,
+                        1747,
+                        3567
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        368,
+                        1753,
+                        852,
+                        2267
+                    ]
+                ],
+                "textos": []
+            },
+            "_vista_cargada": true
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
+    "36": {
+        "nombre_error": "Error 1020",
+        "codigo_interno": "ERROR_SMC_FLASH_CONFIG_CORRUPT",
+        "descripcion": "",
+        "pasos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        442,
+                        1765,
+                        843,
+                        2267
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        341,
+                        1777,
+                        771,
+                        2249
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1071,
+                        2937,
+                        1812,
+                        3631
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        317,
+                        1795,
+                        789,
+                        2261
+                    ]
+                ],
+                "textos": []
+            },
+            "_vista_cargada": true
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
     "1021": {
         "area": "XSS UEM (E 73) - ERROR_HSIO_TRAINING",
         "descripcion": "Fallo crítico en el enlace eDRAM High-Speed I/O.",
@@ -2747,6 +2859,358 @@
             }
         }
     },
+    "37": {
+        "nombre_error": "Error 1022",
+        "codigo_interno": "ERROR_HSIO_CALIBRATION_FAILED",
+        "descripcion": "",
+        "pasos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2092,
+                        1747,
+                        2714,
+                        2430
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2116,
+                        1729,
+                        2720,
+                        2400
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3978,
+                        2821,
+                        4995,
+                        3867
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2183,
+                        1656,
+                        2840,
+                        2377
+                    ]
+                ],
+                "textos": []
+            },
+            "_vista_cargada": true
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
+    "38": {
+        "nombre_error": "Error 1023",
+        "codigo_interno": "ERROR_UNEXPECTED_ETHERNET_PHY_VENDOR",
+        "descripcion": "",
+        "pasos": [],
+        "placas": {
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        671,
+                        37,
+                        1155,
+                        624
+                    ],
+                    [
+                        960,
+                        1295,
+                        1454,
+                        1873
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1668,
+                        102,
+                        2358,
+                        1034
+                    ],
+                    [
+                        2125,
+                        2227,
+                        2861,
+                        2992
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        745,
+                        -9,
+                        1239,
+                        680
+                    ],
+                    [
+                        829,
+                        1491,
+                        1071,
+                        1733
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        661,
+                        65,
+                        1081,
+                        624
+                    ],
+                    [
+                        978,
+                        1342,
+                        1407,
+                        1808
+                    ]
+                ],
+                "textos": []
+            },
+            "_vista_cargada": true
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
+    "39": {
+        "nombre_error": "Error 1030",
+        "codigo_interno": "",
+        "descripcion": "ERROR_ETHERNET_PHY_RESET_FAIL",
+        "pasos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        683,
+                        90,
+                        1100,
+                        659
+                    ],
+                    [
+                        985,
+                        1396,
+                        1414,
+                        1886
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        671,
+                        54,
+                        1106,
+                        634
+                    ],
+                    [
+                        955,
+                        1336,
+                        1487,
+                        1844
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1735,
+                        157,
+                        2321,
+                        1003
+                    ],
+                    [
+                        2140,
+                        2146,
+                        2914,
+                        2980
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        792,
+                        30,
+                        1215,
+                        592
+                    ],
+                    [
+                        822,
+                        1475,
+                        1082,
+                        1723
+                    ]
+                ],
+                "textos": []
+            },
+            "_vista_cargada": true
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
+    "40": {
+        "nombre_error": "Error 1031",
+        "codigo_interno": "ERROR_ETHERNET_PHY_READ_WRITE_FAIL",
+        "descripcion": "",
+        "pasos": [],
+        "placas": {
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        795,
+                        29,
+                        1214,
+                        622
+                    ],
+                    [
+                        861,
+                        1537,
+                        1047,
+                        1687
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        682,
+                        41,
+                        1083,
+                        544
+                    ],
+                    [
+                        969,
+                        1352,
+                        1501,
+                        1848
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        1669,
+                        113,
+                        2357,
+                        975
+                    ],
+                    [
+                        2177,
+                        2225,
+                        2913,
+                        3009
+                    ]
+                ],
+                "textos": []
+            },
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        682,
+                        23,
+                        1106,
+                        634
+                    ],
+                    [
+                        999,
+                        1388,
+                        1418,
+                        1872
+                    ]
+                ],
+                "textos": []
+            },
+            "_vista_cargada": true
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
+    "41": {
+        "nombre_error": "Error 1032",
+        "codigo_interno": "ERROR_UNSUPPORTED_GPU",
+        "descripcion": "",
+        "pasos": [],
+        "placas": {
+            "Waitsburg_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2079,
+                        1723,
+                        2763,
+                        2442
+                    ]
+                ],
+                "textos": []
+            },
+            "Corona_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2098,
+                        1705,
+                        2739,
+                        2418
+                    ]
+                ],
+                "textos": []
+            },
+            "Stingray_Top.jpg": {
+                "rectangulos": [
+                    [
+                        3978,
+                        2812,
+                        4986,
+                        3894
+                    ]
+                ],
+                "textos": []
+            },
+            "Trinity_Top.jpg": {
+                "rectangulos": [
+                    [
+                        2174,
+                        1683,
+                        2831,
+                        2423
+                    ]
+                ],
+                "textos": []
+            },
+            "_vista_cargada": true
+        },
+        "pdfs": {},
+        "videos": [],
+        "notas": ""
+    },
     "1033": {
         "area": "XSS UEM (E 79) - ERROR_XSS_FLASH_NO_XAM",
         "descripcion": "XAM no se encuentra almacenado dentro de la estructura NAND Flash.",
@@ -2804,7 +3268,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "1101": {
@@ -2864,7 +3329,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "1102": {
@@ -2981,465 +3447,9 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
-    },
-    "35": {
-        "nombre_error": "Error 1013",
-        "codigo_interno": "ERROR_XSS_XAM_NO_DASH",
-        "descripcion": "",
-        "pasos": [],
-        "placas": {
-            "Waitsburg_Top.jpg": {
-                "rectangulos": [
-                    [
-                        290,
-                        1838,
-                        755,
-                        2267
-                    ]
-                ],
-                "textos": []
-            },
-            "Corona_Top.jpg": {
-                "rectangulos": [
-                    [
-                        308,
-                        1795,
-                        779,
-                        2212
-                    ]
-                ],
-                "textos": []
-            },
-            "Stingray_Top.jpg": {
-                "rectangulos": [
-                    [
-                        1118,
-                        2914,
-                        1747,
-                        3567
-                    ]
-                ],
-                "textos": []
-            },
-            "Trinity_Top.jpg": {
-                "rectangulos": [
-                    [
-                        368,
-                        1753,
-                        852,
-                        2267
-                    ]
-                ],
-                "textos": []
-            }
-        },
-        "pdfs": {},
-        "videos": [],
-        "notas": ""
-    },
-    "36": {
-        "nombre_error": "Error 1020",
-        "codigo_interno": "ERROR_SMC_FLASH_CONFIG_CORRUPT",
-        "descripcion": "",
-        "pasos": [],
-        "placas": {
-            "Trinity_Top.jpg": {
-                "rectangulos": [
-                    [
-                        442,
-                        1765,
-                        843,
-                        2267
-                    ]
-                ],
-                "textos": []
-            },
-            "Corona_Top.jpg": {
-                "rectangulos": [
-                    [
-                        341,
-                        1777,
-                        771,
-                        2249
-                    ]
-                ],
-                "textos": []
-            },
-            "Stingray_Top.jpg": {
-                "rectangulos": [
-                    [
-                        1071,
-                        2937,
-                        1812,
-                        3631
-                    ]
-                ],
-                "textos": []
-            },
-            "Waitsburg_Top.jpg": {
-                "rectangulos": [
-                    [
-                        317,
-                        1795,
-                        789,
-                        2261
-                    ]
-                ],
-                "textos": []
-            }
-        },
-        "pdfs": {},
-        "videos": [],
-        "notas": ""
-    },
-    "37": {
-        "nombre_error": "Error 1022",
-        "codigo_interno": "ERROR_HSIO_CALIBRATION_FAILED",
-        "descripcion": "",
-        "pasos": [],
-        "placas": {
-            "Waitsburg_Top.jpg": {
-                "rectangulos": [
-                    [
-                        2092,
-                        1747,
-                        2714,
-                        2430
-                    ]
-                ],
-                "textos": []
-            },
-            "Corona_Top.jpg": {
-                "rectangulos": [
-                    [
-                        2116,
-                        1729,
-                        2720,
-                        2400
-                    ]
-                ],
-                "textos": []
-            },
-            "Stingray_Top.jpg": {
-                "rectangulos": [
-                    [
-                        3978,
-                        2821,
-                        4995,
-                        3867
-                    ]
-                ],
-                "textos": []
-            },
-            "Trinity_Top.jpg": {
-                "rectangulos": [
-                    [
-                        2183,
-                        1656,
-                        2840,
-                        2377
-                    ]
-                ],
-                "textos": []
-            }
-        },
-        "pdfs": {},
-        "videos": [],
-        "notas": ""
-    },
-    "38": {
-        "nombre_error": "Error 1023",
-        "codigo_interno": "ERROR_UNEXPECTED_ETHERNET_PHY_VENDOR",
-        "descripcion": "",
-        "pasos": [],
-        "placas": {
-            "Corona_Top.jpg": {
-                "rectangulos": [
-                    [
-                        671,
-                        37,
-                        1155,
-                        624
-                    ],
-                    [
-                        960,
-                        1295,
-                        1454,
-                        1873
-                    ]
-                ],
-                "textos": []
-            },
-            "Stingray_Top.jpg": {
-                "rectangulos": [
-                    [
-                        1668,
-                        102,
-                        2358,
-                        1034
-                    ],
-                    [
-                        2125,
-                        2227,
-                        2861,
-                        2992
-                    ]
-                ],
-                "textos": []
-            },
-            "Trinity_Top.jpg": {
-                "rectangulos": [
-                    [
-                        745,
-                        -9,
-                        1239,
-                        680
-                    ],
-                    [
-                        829,
-                        1491,
-                        1071,
-                        1733
-                    ]
-                ],
-                "textos": []
-            },
-            "Waitsburg_Top.jpg": {
-                "rectangulos": [
-                    [
-                        661,
-                        65,
-                        1081,
-                        624
-                    ],
-                    [
-                        978,
-                        1342,
-                        1407,
-                        1808
-                    ]
-                ],
-                "textos": []
-            }
-        },
-        "pdfs": {},
-        "videos": [],
-        "notas": ""
-    },
-    "39": {
-        "nombre_error": "Error 1030",
-        "codigo_interno": "",
-        "descripcion": "ERROR_ETHERNET_PHY_RESET_FAIL",
-        "pasos": [],
-        "placas": {
-            "Waitsburg_Top.jpg": {
-                "rectangulos": [
-                    [
-                        683,
-                        90,
-                        1100,
-                        659
-                    ],
-                    [
-                        985,
-                        1396,
-                        1414,
-                        1886
-                    ]
-                ],
-                "textos": []
-            },
-            "Corona_Top.jpg": {
-                "rectangulos": [
-                    [
-                        671,
-                        54,
-                        1106,
-                        634
-                    ],
-                    [
-                        955,
-                        1336,
-                        1487,
-                        1844
-                    ]
-                ],
-                "textos": []
-            },
-            "Stingray_Top.jpg": {
-                "rectangulos": [
-                    [
-                        1735,
-                        157,
-                        2321,
-                        1003
-                    ],
-                    [
-                        2140,
-                        2146,
-                        2914,
-                        2980
-                    ]
-                ],
-                "textos": []
-            },
-            "Trinity_Top.jpg": {
-                "rectangulos": [
-                    [
-                        792,
-                        30,
-                        1215,
-                        592
-                    ],
-                    [
-                        822,
-                        1475,
-                        1082,
-                        1723
-                    ]
-                ],
-                "textos": []
-            }
-        },
-        "pdfs": {},
-        "videos": [],
-        "notas": ""
-    },
-    "40": {
-        "nombre_error": "Error 1031",
-        "codigo_interno": "ERROR_ETHERNET_PHY_READ_WRITE_FAIL",
-        "descripcion": "",
-        "pasos": [],
-        "placas": {
-            "Trinity_Top.jpg": {
-                "rectangulos": [
-                    [
-                        795,
-                        29,
-                        1214,
-                        622
-                    ],
-                    [
-                        861,
-                        1537,
-                        1047,
-                        1687
-                    ]
-                ],
-                "textos": []
-            },
-            "Corona_Top.jpg": {
-                "rectangulos": [
-                    [
-                        682,
-                        41,
-                        1083,
-                        544
-                    ],
-                    [
-                        969,
-                        1352,
-                        1501,
-                        1848
-                    ]
-                ],
-                "textos": []
-            },
-            "Stingray_Top.jpg": {
-                "rectangulos": [
-                    [
-                        1669,
-                        113,
-                        2357,
-                        975
-                    ],
-                    [
-                        2177,
-                        2225,
-                        2913,
-                        3009
-                    ]
-                ],
-                "textos": []
-            },
-            "Waitsburg_Top.jpg": {
-                "rectangulos": [
-                    [
-                        682,
-                        23,
-                        1106,
-                        634
-                    ],
-                    [
-                        999,
-                        1388,
-                        1418,
-                        1872
-                    ]
-                ],
-                "textos": []
-            }
-        },
-        "pdfs": {},
-        "videos": [],
-        "notas": ""
-    },
-    "41": {
-        "nombre_error": "Error 1032",
-        "codigo_interno": "ERROR_UNSUPPORTED_GPU",
-        "descripcion": "",
-        "pasos": [],
-        "placas": {
-            "Waitsburg_Top.jpg": {
-                "rectangulos": [
-                    [
-                        2079,
-                        1723,
-                        2763,
-                        2442
-                    ]
-                ],
-                "textos": []
-            },
-            "Corona_Top.jpg": {
-                "rectangulos": [
-                    [
-                        2098,
-                        1705,
-                        2739,
-                        2418
-                    ]
-                ],
-                "textos": []
-            },
-            "Stingray_Top.jpg": {
-                "rectangulos": [
-                    [
-                        3978,
-                        2812,
-                        4986,
-                        3894
-                    ]
-                ],
-                "textos": []
-            },
-            "Trinity_Top.jpg": {
-                "rectangulos": [
-                    [
-                        2174,
-                        1683,
-                        2831,
-                        2423
-                    ]
-                ],
-                "textos": []
-            }
-        },
-        "pdfs": {},
-        "videos": [],
-        "notas": ""
     },
     "LUZ ROJA EN FUENTE": {
         "area": "subtitulo de luz roja en la fuente",
@@ -3508,7 +3518,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     }
 }

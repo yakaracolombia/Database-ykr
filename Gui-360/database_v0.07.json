@@ -1,0 +1,22 @@
+{
+    "_version": "0.07",
+    "43": {
+        "nombre_error": "VERSION OBSOLETA",
+        "codigo_interno": "UPDATE_OBLIGATORIO",
+        "descripcion": "ESTA APP ES DEMASIADA LENTA",
+        "pasos": [
+            "EL RENDERIZAO DE IMAGENES SE HACIA POR SOFTWARE HACENDO LENLA ESTA APP",
+            "",
+            "LA VERSION 1.2 ES MAS DE UN 2000% , MAS RAPIDA Y ESTABLE",
+            "",
+            "USA EL ENLACE EXTERNO PARA IR A LA PAGINA DE DESCARGA",
+            "",
+            "EN SERIO ES MUY MUY LENTA ESTA APP"
+        ],
+        "placas": {},
+        "pdfs": {},
+        "videos": [
+            "https://cursos-yakara.odoo.com/slides/slide/1-descarga-de-la-diagnosticapp-22?fullscreen=1https://cursos-yakara.odoo.com/slides/slide/1-descarga-de-la-diagnosticapp-22?fullscreen=1"
+        ]
+    }
+}

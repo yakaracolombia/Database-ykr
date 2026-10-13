@@ -1,5 +1,5 @@
 {
-    "_version": "0.08",
+    "_version": "0.09",
     "42": {
         "nombre_error": "MENSAJES CURSO",
         "codigo_interno": "MENSAJERIA_IN_APP",
@@ -32,7 +32,8 @@
             "Corona_Bottom.jpg": {
                 "rectangulos": [],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0001": {
@@ -233,7 +234,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0003": {
@@ -297,7 +299,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0010": {
@@ -369,7 +372,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         },
         "codigo_interno": "ERROR_NO_ANA / ERROR_NO_HANA",
         "notas": "",
@@ -445,7 +449,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         },
         "codigo_interno": "ERROR_THERMAL_CPU",
         "notas": "",
@@ -516,7 +521,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0013": {
@@ -595,7 +601,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0020": {
@@ -666,7 +673,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0021": {
@@ -755,7 +763,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0022": {
@@ -882,7 +891,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0023": {
@@ -976,7 +986,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0030": {
@@ -1052,7 +1063,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0031": {
@@ -1171,7 +1183,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0032": {
@@ -1290,7 +1303,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0033": {
@@ -1394,7 +1408,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0100": {
@@ -1535,7 +1550,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0101": {
@@ -1746,7 +1762,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0102": {
@@ -1820,7 +1837,8 @@
             "Waitsburg_Bottom.jpg": {
                 "rectangulos": [],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0103": {
@@ -2006,7 +2024,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0110": {
@@ -2192,7 +2211,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "0111": {
@@ -2262,7 +2282,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "1000": {
@@ -2346,7 +2367,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "1001": {
@@ -2430,7 +2452,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "1002": {
@@ -2504,7 +2527,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "1010": {
@@ -2570,7 +2594,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "1011": {
@@ -2654,7 +2679,8 @@
                     ]
                 ],
                 "textos": []
-            }
+            },
+            "_vista_cargada": true
         }
     },
     "1012": {
